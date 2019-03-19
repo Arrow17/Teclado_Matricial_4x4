@@ -1,0 +1,180 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F45K50 ]
+[d frameptr 4065 ]
+"31 /home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"53
+[v _lcd_control lcd_control `(v  1 e 1 0 ]
+"67
+[v _lcd_dato lcd_dato `(v  1 e 1 0 ]
+"79
+[v _lcd_clear_display lcd_clear_display `(v  1 e 1 0 ]
+"93
+[v _lcd_print lcd_print `(v  1 e 1 0 ]
+"153
+[v _lcd_time_control lcd_time_control `(v  1 e 1 0 ]
+"195
+[v _lcd_Pos lcd_Pos `(v  1 e 1 0 ]
+"7 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+[v _Inkey Inkey `(uc  1 e 1 0 ]
+"161
+[v _inicio_teclado inicio_teclado `(v  1 e 1 0 ]
+"4 /opt/microchip/xc8/v2.05/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /opt/microchip/xc8/v2.05/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /opt/microchip/xc8/v2.05/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /opt/microchip/xc8/v2.05/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /opt/microchip/xc8/v2.05/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /opt/microchip/xc8/v2.05/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 /opt/microchip/xc8/v2.05/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /opt/microchip/xc8/v2.05/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /opt/microchip/xc8/v2.05/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 /opt/microchip/xc8/v2.05/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /opt/microchip/xc8/v2.05/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"15 /home/francisco/Documentos/Beca/Teclado/Teclado.X/Main.c
+[v _main main `(v  1 e 1 0 ]
+"4 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+[v _val val `uc  1 e 1 0 ]
+"277 /opt/microchip/xc8/v2.05/pic/include/pic18f45k50.h
+[v _ANSELB ANSELB `VEuc  1 e 1 @3932 ]
+"3053
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+[s S93 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"3083
+[s S102 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S110 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S113 . 1 `S93 1 . 1 0 `S102 1 . 1 0 `S110 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES113  1 e 1 @3969 ]
+"3779
+[v _LATA LATA `VEuc  1 e 1 @3977 ]
+[s S49 . 1 `uc 1 LATE0 1 0 :1:0 
+`uc 1 LATE1 1 0 :1:1 
+`uc 1 LATE2 1 0 :1:2 
+]
+"4234
+[s S53 . 1 `uc 1 LE0 1 0 :1:0 
+`uc 1 LE1 1 0 :1:1 
+`uc 1 LE2 1 0 :1:2 
+]
+[u S57 . 1 `S49 1 . 1 0 `S53 1 . 1 0 ]
+[v _LATEbits LATEbits `VES57  1 e 1 @3981 ]
+"4626
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"4848
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+[s S24 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 WPUE3 1 0 :1:7 
+]
+"5494
+[s S30 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+[u S34 . 1 `S24 1 . 1 0 `S30 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES34  1 e 1 @3990 ]
+[s S138 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_RBPU 1 0 :1:7 
+]
+"13175
+[s S141 . 1 `uc 1 IOCIP 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TMR0IP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INTEDG2 1 0 :1:4 
+`uc 1 INTEDG1 1 0 :1:5 
+`uc 1 INTEDG0 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S150 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IP 1 0 :1:2 
+`uc 1 . 1 0 :4:3 
+`uc 1 RBPU 1 0 :1:7 
+]
+[u S155 . 1 `S138 1 . 1 0 `S141 1 . 1 0 `S150 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES155  1 e 1 @4081 ]
+"15 /home/francisco/Documentos/Beca/Teclado/Teclado.X/Main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"25
+} 0
+"161 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+[v _inicio_teclado inicio_teclado `(v  1 e 1 0 ]
+{
+"166
+} 0
+"7
+[v _Inkey Inkey `(uc  1 e 1 0 ]
+{
+"159
+} 0
+"93 /home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+[v _lcd_print lcd_print `(v  1 e 1 0 ]
+{
+[v lcd_print@dato dato `*.25uc  1 p 2 2 ]
+"99
+} 0
+"67
+[v _lcd_dato lcd_dato `(v  1 e 1 0 ]
+{
+[v lcd_dato@dato dato `uc  1 a 1 wreg ]
+[v lcd_dato@dato dato `uc  1 a 1 wreg ]
+[v lcd_dato@dato dato `uc  1 a 1 1 ]
+"74
+} 0
+"31
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"46
+} 0
+"79
+[v _lcd_clear_display lcd_clear_display `(v  1 e 1 0 ]
+{
+"81
+} 0
+"53
+[v _lcd_control lcd_control `(v  1 e 1 0 ]
+{
+[v lcd_control@dato dato `uc  1 a 1 wreg ]
+[v lcd_control@dato dato `uc  1 a 1 wreg ]
+[v lcd_control@dato dato `uc  1 a 1 1 ]
+"60
+} 0
+"153
+[v _lcd_time_control lcd_time_control `(v  1 e 1 0 ]
+{
+"158
+} 0
