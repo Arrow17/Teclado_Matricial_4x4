@@ -3,24 +3,28 @@
 [d edition pro ]
 [d chip 18F45K50 ]
 [d frameptr 4065 ]
-"31 /home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+"28 /home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
 [v _lcd_init lcd_init `(v  1 e 1 0 ]
-"53
+"50
 [v _lcd_control lcd_control `(v  1 e 1 0 ]
-"67
+"64
 [v _lcd_dato lcd_dato `(v  1 e 1 0 ]
-"79
+"76
 [v _lcd_clear_display lcd_clear_display `(v  1 e 1 0 ]
-"93
+"90
 [v _lcd_print lcd_print `(v  1 e 1 0 ]
-"153
+"123
+[v _lcd_goto lcd_goto `(v  1 e 1 0 ]
+"150
 [v _lcd_time_control lcd_time_control `(v  1 e 1 0 ]
-"195
+"192
 [v _lcd_Pos lcd_Pos `(v  1 e 1 0 ]
-"7 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+"22 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
 [v _Inkey Inkey `(uc  1 e 1 0 ]
-"161
+"173
 [v _inicio_teclado inicio_teclado `(v  1 e 1 0 ]
+"214
+[v _tecla_1 tecla_1 `(v  1 e 1 0 ]
 "4 /opt/microchip/xc8/v2.05/pic/sources/c99/common/fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 /opt/microchip/xc8/v2.05/pic/sources/c99/common/float.c
@@ -47,7 +51,7 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "15 /home/francisco/Documentos/Beca/Teclado/Teclado.X/Main.c
 [v _main main `(v  1 e 1 0 ]
-"4 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+"17 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
 [v _val val `uc  1 e 1 0 ]
 "277 /opt/microchip/xc8/v2.05/pic/include/pic18f45k50.h
 [v _ANSELB ANSELB `VEuc  1 e 1 @3932 ]
@@ -106,11 +110,11 @@
 ]
 [u S34 . 1 `S24 1 . 1 0 `S30 1 . 1 0 ]
 [v _TRISEbits TRISEbits `VES34  1 e 1 @3990 ]
-[s S138 . 1 `uc 1 . 1 0 :7:0 
+[s S142 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 NOT_RBPU 1 0 :1:7 
 ]
 "13175
-[s S141 . 1 `uc 1 IOCIP 1 0 :1:0 
+[s S145 . 1 `uc 1 IOCIP 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 TMR0IP 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -119,62 +123,67 @@
 `uc 1 INTEDG0 1 0 :1:6 
 `uc 1 nRBPU 1 0 :1:7 
 ]
-[s S150 . 1 `uc 1 . 1 0 :2:0 
+[s S154 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IP 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 RBPU 1 0 :1:7 
 ]
-[u S155 . 1 `S138 1 . 1 0 `S141 1 . 1 0 `S150 1 . 1 0 ]
-[v _INTCON2bits INTCON2bits `VES155  1 e 1 @4081 ]
+[u S159 . 1 `S142 1 . 1 0 `S145 1 . 1 0 `S154 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES159  1 e 1 @4081 ]
 "15 /home/francisco/Documentos/Beca/Teclado/Teclado.X/Main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "25
 } 0
-"161 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+"173 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
 [v _inicio_teclado inicio_teclado `(v  1 e 1 0 ]
 {
-"166
+"178
 } 0
-"7
+"22
 [v _Inkey Inkey `(uc  1 e 1 0 ]
 {
-"159
+"171
 } 0
-"93 /home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+"214
+[v _tecla_1 tecla_1 `(v  1 e 1 0 ]
+{
+"217
+} 0
+"90 /home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
 [v _lcd_print lcd_print `(v  1 e 1 0 ]
 {
 [v lcd_print@dato dato `*.25uc  1 p 2 2 ]
-"99
+"96
 } 0
-"67
+"64
 [v _lcd_dato lcd_dato `(v  1 e 1 0 ]
 {
 [v lcd_dato@dato dato `uc  1 a 1 wreg ]
 [v lcd_dato@dato dato `uc  1 a 1 wreg ]
 [v lcd_dato@dato dato `uc  1 a 1 1 ]
-"74
+"71
 } 0
-"31
-[v _lcd_init lcd_init `(v  1 e 1 0 ]
-{
-"46
-} 0
-"79
+"76
 [v _lcd_clear_display lcd_clear_display `(v  1 e 1 0 ]
 {
-"81
+"78
 } 0
-"53
+"28
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"43
+} 0
+"50
 [v _lcd_control lcd_control `(v  1 e 1 0 ]
 {
 [v lcd_control@dato dato `uc  1 a 1 wreg ]
 [v lcd_control@dato dato `uc  1 a 1 wreg ]
 [v lcd_control@dato dato `uc  1 a 1 1 ]
-"60
+"57
 } 0
-"153
+"150
 [v _lcd_time_control lcd_time_control `(v  1 e 1 0 ]
 {
-"158
+"155
 } 0

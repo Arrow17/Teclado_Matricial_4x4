@@ -19,7 +19,7 @@ void main(void) {
 
     while(1){
     Inkey();
-    
+        //registro_teclado();
     }
     return;
 }

@@ -1,7 +1,4 @@
-/* Creada por tutorialesvirtuales.com / rgt90@hotmail.com
- * Nota: Esta Libreria esta diseñada PAra una interfaz a 4 Bits
- Esta primera parte debe ser modificada por el usuario, para setear los pines del Micro
- */
+
 #define RS      LATEbits.LATE0     //Se debe de definir el Pin Usado para RS
 #define EN      LATEbits.LATE1       //Se debe de definir el pin Usado para E
 #define TRISRS  TRISEbits.TRISE0    //Se define el Tris para el RS Para poderlo configurar como Salida

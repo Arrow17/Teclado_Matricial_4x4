@@ -8012,7 +8012,7 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "/opt/microchip/xc8/v2.05/pic/include/xc.h" 2 3
 # 9 "Main.c" 2
 # 1 "./LCD.h" 1
-# 14 "./LCD.h"
+# 11 "./LCD.h"
 void lcd_init();
 void lcd_control(char);
 void lcd_dato(char);
@@ -8116,7 +8116,7 @@ void lcd_print_with_position(int x, int y, char *dato) {
     lcd_control(posicion);
     lcd_print(dato);
 }
-# 126 "./LCD.h"
+# 123 "./LCD.h"
 void lcd_goto(int x, int y) {
     char posicion;
     switch (y) {
@@ -8155,7 +8155,7 @@ void lcd_time_control() {
 int lcd_Cadena(char* cadena,unsigned char* columna, unsigned char* fila)
 {
     register int conteo=0;
-# 174 "./LCD.h"
+# 171 "./LCD.h"
     *fila+=(*columna>>4);
     lcd_Pos(*columna,*fila);
     while(*cadena)
@@ -8258,12 +8258,12 @@ void lcd_Pos(char columna, char fila)
 #pragma config EBTRB = OFF
 # 11 "Main.c" 2
 # 1 "./teclado.h" 1
-
-
-
+# 17 "./teclado.h"
 unsigned char val=0;
-
-
+void inicio_teclado();
+unsigned char Inkey(void);
+void registro_teclado();
+void tecla_1();
 unsigned char Inkey(void){
 
 
@@ -8275,10 +8275,7 @@ unsigned char Inkey(void){
     if(PORTBbits.RB4==0)
     {
 
-        lcd_clear_display();
-        lcd_print("1");
-
-        val=0;
+        tecla_1(); val=0;
     }
         if(PORTBbits.RB5==0)
     {
@@ -8418,12 +8415,40 @@ unsigned char Inkey(void){
     return val;
 }
 
-void inicio_teclado(){
+ void inicio_teclado(){
 
 
     INTCON2bits.RBPU=0;
     ANSELB=0;
 }
+
+ void registro_teclado(){
+      TRISB = 0xF0;
+      PORTB = 0xFF;
+      lcd_init();
+      lcd_clear_display();
+      lcd_print("¿Desea hacer" ); _delay((unsigned long)((250)*(4000000/4000.0)));
+      lcd_clear_display();
+      lcd_goto(2,6);
+      lcd_print("un registro?"); _delay((unsigned long)((250)*(4000000/4000.0)));
+      lcd_clear_display();
+      lcd_goto(2,2);
+      lcd_print("*/Si o #/Cont.");_delay((unsigned long)((500)*(4000000/4000.0))); _delay((unsigned long)((500)*(4000000/4000.0)));
+
+
+      PORTBbits.RB0=0;
+      if(PORTBbits.RB4==0){lcd_clear_display();lcd_print("iniciando reg.");_delay((unsigned long)((10)*(4000000/4000.0)));};
+
+      PORTBbits.RB0=1;
+# 210 "./teclado.h"
+ }
+
+
+
+ void tecla_1(){
+     lcd_clear_display();
+     lcd_print("1");
+ }
 # 12 "Main.c" 2
 
 
