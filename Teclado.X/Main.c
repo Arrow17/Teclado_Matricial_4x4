@@ -16,11 +16,15 @@
 void main(void) {
 
   
-    inicio_teclado();
+    int_teclado();
+   
 
     while(1){
-    Inkey();
-        //registro_teclado();
+       
+     menu_teclado();
+   
+  
+    
     }
     return;
 }

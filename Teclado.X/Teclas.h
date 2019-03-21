@@ -1,4 +1,7 @@
- void tecla_1(){
+
+
+
+void tecla_1(){
      lcd_clear_display();
      lcd_print("1");
  }

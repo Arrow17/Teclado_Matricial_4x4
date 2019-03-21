@@ -53,37 +53,37 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S134 . . . . ]
 "3083
 [v _PORTBbits `VS134 ~T0 @X0 0 e@3969 ]
-"6 ./Teclado.h
+"3 ./Teclado.h
 [v _tecla_1 `(v ~T0 @X0 0 e? ]
-"7
+"4
 [v _tecla_2 `(v ~T0 @X0 0 e? ]
-"8
+"5
 [v _tecla_3 `(v ~T0 @X0 0 e? ]
-"16
-[v _tecla_A `(v ~T0 @X0 0 e? ]
-"9
-[v _tecla_4 `(v ~T0 @X0 0 e? ]
-"10
-[v _tecla_5 `(v ~T0 @X0 0 e? ]
-"11
-[v _tecla_6 `(v ~T0 @X0 0 e? ]
-"17
-[v _tecla_B `(v ~T0 @X0 0 e? ]
-"12
-[v _tecla_7 `(v ~T0 @X0 0 e? ]
 "13
-[v _tecla_8 `(v ~T0 @X0 0 e? ]
+[v _tecla_A `(v ~T0 @X0 0 e? ]
+"6
+[v _tecla_4 `(v ~T0 @X0 0 e? ]
+"7
+[v _tecla_5 `(v ~T0 @X0 0 e? ]
+"8
+[v _tecla_6 `(v ~T0 @X0 0 e? ]
 "14
+[v _tecla_B `(v ~T0 @X0 0 e? ]
+"9
+[v _tecla_7 `(v ~T0 @X0 0 e? ]
+"10
+[v _tecla_8 `(v ~T0 @X0 0 e? ]
+"11
 [v _tecla_9 `(v ~T0 @X0 0 e? ]
-"18
-[v _tecla_C `(v ~T0 @X0 0 e? ]
-"20
-[v _tecla_aste `(v ~T0 @X0 0 e? ]
 "15
+[v _tecla_C `(v ~T0 @X0 0 e? ]
+"17
+[v _tecla_aste `(v ~T0 @X0 0 e? ]
+"12
 [v _tecla_0 `(v ~T0 @X0 0 e? ]
-"21
+"18
 [v _tecla_gato `(v ~T0 @X0 0 e? ]
-"19
+"16
 [v _tecla_D `(v ~T0 @X0 0 e? ]
 "13154 /opt/microchip/xc8/v2.05/pic/include/pic18f45k50.h
 [s S608 :7 `uc 1 :1 `uc 1 ]
@@ -101,6 +101,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _INTCON2bits `VS607 ~T0 @X0 0 e@4081 ]
 "277
 [v _ANSELB `Vuc ~T0 @X0 0 e@3932 ]
+"26 ./Teclado.h
+[v _inicio_teclado `(v ~T0 @X0 0 e? ]
+"27
+[v _registro_teclado `(v ~T0 @X0 0 e? ]
+"28
+[v _agregar_teclado `(v ~T0 @X0 0 e? ]
+"29
+[v _alarma_teclado `(v ~T0 @X0 0 e? ]
 [p mainexit ]
 "54 /opt/microchip/xc8/v2.05/pic/include/pic18f45k50.h
 [; <" SRCON1 equ 0F57h ;# ">
@@ -920,405 +928,539 @@ Version 4.0 HI-TECH Software Intermediate Code
 [p x EBTR3 = OFF ]
 "69
 [p x EBTRB = OFF ]
-"2 ./Teclado.h
+"20 ./Teclado.h
 [v _val `uc ~T0 @X0 1 e ]
 [i _val
+-> -> 20 `i `uc
+]
+[v _x `uc ~T0 @X0 1 e ]
+[i _x
 -> -> 0 `i `uc
 ]
-"24
+"31
 [v _Inkey `(uc ~T0 @X0 1 ef ]
 {
 [e :U _Inkey ]
 [f ]
-"27
+"34
 [e = _TRISB -> -> 240 `i `uc ]
-"28
+"35
 [e = _PORTB -> -> 255 `i `uc ]
-"29
+"36
 [e ( _lcd_init ..  ]
-"30
+"37
 [e = . . _PORTBbits 0 0 -> -> 0 `i `uc ]
-"31
+"38
 [e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 669  ]
 {
 [e ( _tecla_1 ..  ]
 [e = _val -> -> 0 `i `uc ]
 }
 [e :U 669 ]
-"32
+"39
 [e $ ! == -> . . _PORTBbits 0 5 `i -> 0 `i 670  ]
 {
 [e ( _tecla_2 ..  ]
 [e = _val -> -> 1 `i `uc ]
 }
 [e :U 670 ]
-"33
+"40
 [e $ ! == -> . . _PORTBbits 0 6 `i -> 0 `i 671  ]
 {
 [e ( _tecla_3 ..  ]
 [e = _val -> -> 2 `i `uc ]
 }
 [e :U 671 ]
-"34
+"41
 [e $ ! == -> . . _PORTBbits 0 7 `i -> 0 `i 672  ]
 {
 [e ( _tecla_A ..  ]
 [e = _val -> -> 3 `i `uc ]
 }
 [e :U 672 ]
-"35
+"42
 [e = . . _PORTBbits 0 0 -> -> 1 `i `uc ]
-"37
+"44
 [e = . . _PORTBbits 0 1 -> -> 0 `i `uc ]
-"38
+"45
 [e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 673  ]
 {
 [e ( _tecla_4 ..  ]
-[e = _val -> -> 0 `i `uc ]
+[e = _val -> -> 4 `i `uc ]
 }
 [e :U 673 ]
-"39
+"46
 [e $ ! == -> . . _PORTBbits 0 5 `i -> 0 `i 674  ]
 {
 [e ( _tecla_5 ..  ]
-[e = _val -> -> 1 `i `uc ]
+[e = _val -> -> 5 `i `uc ]
 }
 [e :U 674 ]
-"40
+"47
 [e $ ! == -> . . _PORTBbits 0 6 `i -> 0 `i 675  ]
 {
 [e ( _tecla_6 ..  ]
-[e = _val -> -> 2 `i `uc ]
+[e = _val -> -> 6 `i `uc ]
 }
 [e :U 675 ]
-"41
+"48
 [e $ ! == -> . . _PORTBbits 0 7 `i -> 0 `i 676  ]
 {
 [e ( _tecla_B ..  ]
-[e = _val -> -> 3 `i `uc ]
+[e = _val -> -> 7 `i `uc ]
 }
 [e :U 676 ]
-"42
+"49
 [e = . . _PORTBbits 0 1 -> -> 1 `i `uc ]
-"44
+"51
 [e = . . _PORTBbits 0 2 -> -> 0 `i `uc ]
-"45
+"52
 [e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 677  ]
 {
 [e ( _tecla_7 ..  ]
-[e = _val -> -> 0 `i `uc ]
+[e = _val -> -> 8 `i `uc ]
 }
 [e :U 677 ]
-"46
+"53
 [e $ ! == -> . . _PORTBbits 0 5 `i -> 0 `i 678  ]
 {
 [e ( _tecla_8 ..  ]
-[e = _val -> -> 1 `i `uc ]
+[e = _val -> -> 9 `i `uc ]
 }
 [e :U 678 ]
-"47
+"54
 [e $ ! == -> . . _PORTBbits 0 6 `i -> 0 `i 679  ]
 {
 [e ( _tecla_9 ..  ]
-[e = _val -> -> 2 `i `uc ]
+[e = _val -> -> 10 `i `uc ]
 }
 [e :U 679 ]
-"48
+"55
 [e $ ! == -> . . _PORTBbits 0 7 `i -> 0 `i 680  ]
 {
 [e ( _tecla_C ..  ]
-[e = _val -> -> 3 `i `uc ]
+[e = _val -> -> 11 `i `uc ]
 }
 [e :U 680 ]
-"49
+"56
 [e = . . _PORTBbits 0 2 -> -> 1 `i `uc ]
-"51
+"58
 [e = . . _PORTBbits 0 3 -> -> 0 `i `uc ]
-"52
+"59
 [e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 681  ]
 {
 [e ( _tecla_aste ..  ]
-[e = _val -> -> 0 `i `uc ]
+[e = _val -> -> 12 `i `uc ]
 }
 [e :U 681 ]
-"53
+"60
 [e $ ! == -> . . _PORTBbits 0 5 `i -> 0 `i 682  ]
 {
 [e ( _tecla_0 ..  ]
-[e = _val -> -> 1 `i `uc ]
+[e = _val -> -> 13 `i `uc ]
 }
 [e :U 682 ]
-"54
+"61
 [e $ ! == -> . . _PORTBbits 0 6 `i -> 0 `i 683  ]
 {
 [e ( _tecla_gato ..  ]
-[e = _val -> -> 2 `i `uc ]
+[e = _val -> -> 14 `i `uc ]
 }
 [e :U 683 ]
-"55
+"62
 [e $ ! == -> . . _PORTBbits 0 7 `i -> 0 `i 684  ]
 {
 [e ( _tecla_D ..  ]
-[e = _val -> -> 3 `i `uc ]
+[e = _val -> -> 15 `i `uc ]
 }
 [e :U 684 ]
-"56
+"63
 [e = . . _PORTBbits 0 3 -> -> 1 `i `uc ]
-"58
+"65
 [e ) _val ]
 [e $UE 668  ]
-"59
+"66
 [e :UE 668 ]
 }
-"61
+"68
+[v _int_teclado `(v ~T0 @X0 1 ef ]
+"69
+{
+[e :U _int_teclado ]
+[f ]
+"70
+[e = . . _INTCON2bits 2 3 -> -> 0 `i `uc ]
+"71
+[e = _ANSELB -> -> 0 `i `uc ]
+"72
+[e :UE 685 ]
+}
+"75
+[v _menu_teclado `(v ~T0 @X0 1 ef ]
+{
+[e :U _menu_teclado ]
+[f ]
+"76
+[e ( _Inkey ..  ]
+"77
+[e $U 687  ]
+[e :U 688 ]
+{
+"78
+[e ( _Inkey ..  ]
+"79
+[e ( _lcd_init ..  ]
+"80
+[e ( _lcd_clear_display ..  ]
+"81
+[e ( _lcd_print (1 :s 1C ]
+"83
+[e $U 691  ]
+{
+"85
+[e :U 692 ]
+[e ( _inicio_teclado ..  ]
+"86
+[e $U 690  ]
+"88
+[e :U 693 ]
+[e ( _registro_teclado ..  ]
+"89
+[e $U 690  ]
+"91
+[e :U 694 ]
+[e ( _agregar_teclado ..  ]
+"92
+[e $U 690  ]
+"94
+[e :U 695 ]
+[e ( _alarma_teclado ..  ]
+"95
+[e $U 690  ]
+"97
+}
+[e $U 690  ]
+[e :U 691 ]
+[e [\ -> _val `i , $ -> 3 `i 692
+ , $ -> 7 `i 693
+ , $ -> 11 `i 694
+ , $ -> 15 `i 695
+ 690 ]
+[e :U 690 ]
+"100
+}
+[e :U 687 ]
+"77
+[e $ != -> _val `i -> 20 `i 688  ]
+[e :U 689 ]
+"104
+[e :UE 686 ]
+}
+"109
 [v _inicio_teclado `(v ~T0 @X0 1 ef ]
+"110
 {
 [e :U _inicio_teclado ]
 [f ]
-"64
-[e = . . _INTCON2bits 2 3 -> -> 0 `i `uc ]
-"65
-[e = _ANSELB -> -> 0 `i `uc ]
-"66
-[e :UE 685 ]
+"113
+[e $U 697  ]
+[e :U 698 ]
+{
+"114
+[e ( _lcd_init ..  ]
+"115
+[e ( _lcd_clear_display ..  ]
+"116
+[e ( _lcd_print (1 :s 2C ]
+"117
+[e ( _Inkey ..  ]
+"118
 }
-"68
+[e :U 697 ]
+"113
+[e $ != -> _val `i -> 14 `i 698  ]
+[e :U 699 ]
+"118
+[e = _val -> -> 20 `i `uc ]
+"120
+[e :UE 696 ]
+}
+"122
 [v _registro_teclado `(v ~T0 @X0 1 ef ]
+"123
 {
 [e :U _registro_teclado ]
 [f ]
-"69
-[e = _TRISB -> -> 240 `i `uc ]
-"70
-[e = _PORTB -> -> 255 `i `uc ]
-"71
-[e ( _lcd_init ..  ]
-"72
-[e ( _lcd_clear_display ..  ]
-"73
-[e ( _lcd_print (1 :s 1C ]
-[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"74
-[e ( _lcd_clear_display ..  ]
-"75
-[e ( _lcd_goto (2 , -> 2 `i -> 6 `i ]
-"76
-[e ( _lcd_print (1 :s 2C ]
-[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"77
-[e ( _lcd_clear_display ..  ]
-"78
-[e ( _lcd_goto (2 , -> 2 `i -> 2 `i ]
-"79
-[e ( _lcd_print (1 :s 3C ]
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
-"82
-[e = . . _PORTBbits 0 0 -> -> 0 `i `uc ]
-"83
-[e $ ! == -> . . _PORTBbits 0 4 `i -> 0 `i 687  ]
+"125
+[e $U 701  ]
+[e :U 702 ]
 {
+"126
+[e ( _lcd_init ..  ]
+"127
 [e ( _lcd_clear_display ..  ]
+"128
+[e ( _lcd_print (1 :s 3C ]
+"129
+[e ( _Inkey ..  ]
+"130
+}
+[e :U 701 ]
+"125
+[e $ != -> _val `i -> 14 `i 702  ]
+[e :U 703 ]
+"130
+[e = _val -> -> 20 `i `uc ]
+"131
+[e :UE 700 ]
+}
+"137
+[v _agregar_teclado `(v ~T0 @X0 1 ef ]
+{
+[e :U _agregar_teclado ]
+[f ]
+"138
+[e $U 705  ]
+[e :U 706 ]
+{
+"139
+[e ( _lcd_init ..  ]
+"140
+[e ( _lcd_clear_display ..  ]
+"141
 [e ( _lcd_print (1 :s 4C ]
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
+"142
+[e ( _Inkey ..  ]
+"143
 }
-[e :U 687 ]
-"85
-[e = . . _PORTBbits 0 0 -> -> 1 `i `uc ]
-"98
-[e :UE 686 ]
+[e :U 705 ]
+"138
+[e $ != -> _val `i -> 14 `i 706  ]
+[e :U 707 ]
+"143
+[e = _val -> -> 20 `i `uc ]
+"144
+[e :UE 704 ]
 }
-"1 ./Teclas.h
+"150
+[v _alarma_teclado `(v ~T0 @X0 1 ef ]
+{
+[e :U _alarma_teclado ]
+[f ]
+"151
+[e $U 709  ]
+[e :U 710 ]
+{
+"152
+[e ( _lcd_init ..  ]
+"153
+[e ( _lcd_clear_display ..  ]
+"154
+[e ( _lcd_print (1 :s 5C ]
+"155
+[e ( _Inkey ..  ]
+"156
+}
+[e :U 709 ]
+"151
+[e $ != -> _val `i -> 14 `i 710  ]
+[e :U 711 ]
+"156
+[e = _val -> -> 20 `i `uc ]
+"157
+[e :UE 708 ]
+}
+"4 ./Teclas.h
 [v _tecla_1 `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_1 ]
 [f ]
-"2
+"5
 [e ( _lcd_clear_display ..  ]
-"3
-[e ( _lcd_print (1 :s 5C ]
-"4
-[e :UE 688 ]
-}
 "6
+[e ( _lcd_print (1 :s 6C ]
+"7
+[e :UE 712 ]
+}
+"9
 [v _tecla_2 `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_2 ]
 [f ]
-"7
-[e ( _lcd_clear_display ..  ]
-"8
-[e ( _lcd_print (1 :s 6C ]
-"9
-[e :UE 689 ]
-}
 "10
+[e ( _lcd_clear_display ..  ]
+"11
+[e ( _lcd_print (1 :s 7C ]
+"12
+[e :UE 713 ]
+}
+"13
 [v _tecla_3 `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_3 ]
 [f ]
-"11
-[e ( _lcd_clear_display ..  ]
-"12
-[e ( _lcd_print (1 :s 7C ]
 "14
-[e :UE 690 ]
-}
+[e ( _lcd_clear_display ..  ]
 "15
+[e ( _lcd_print (1 :s 8C ]
+"17
+[e :UE 714 ]
+}
+"18
 [v _tecla_A `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_A ]
 [f ]
-"16
-[e ( _lcd_clear_display ..  ]
-"17
-[e ( _lcd_print (1 :s 8C ]
-"18
-[e :UE 691 ]
-}
 "19
+[e ( _lcd_clear_display ..  ]
+"20
+[e ( _lcd_print (1 :s 9C ]
+"21
+[e :UE 715 ]
+}
+"22
 [v _tecla_4 `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_4 ]
 [f ]
-"20
-[e ( _lcd_clear_display ..  ]
-"21
-[e ( _lcd_print (1 :s 9C ]
-"22
-[e :UE 692 ]
-}
 "23
+[e ( _lcd_clear_display ..  ]
+"24
+[e ( _lcd_print (1 :s 10C ]
+"25
+[e :UE 716 ]
+}
+"26
 [v _tecla_5 `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_5 ]
 [f ]
-"24
+"27
 [e ( _lcd_clear_display ..  ]
-"25
-[e ( _lcd_print (1 :s 10C ]
-"26
-[e :UE 693 ]
-}
 "28
+[e ( _lcd_print (1 :s 11C ]
+"29
+[e :UE 717 ]
+}
+"31
 [v _tecla_6 `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_6 ]
 [f ]
-"29
+"32
 [e ( _lcd_clear_display ..  ]
-"30
-[e ( _lcd_print (1 :s 11C ]
-"31
-[e :UE 694 ]
-}
 "33
+[e ( _lcd_print (1 :s 12C ]
+"34
+[e :UE 718 ]
+}
+"36
 [v _tecla_B `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_B ]
 [f ]
-"34
+"37
 [e ( _lcd_clear_display ..  ]
-"35
-[e ( _lcd_print (1 :s 12C ]
-"36
-[e :UE 695 ]
-}
 "38
+[e ( _lcd_print (1 :s 13C ]
+"39
+[e :UE 719 ]
+}
+"41
 [v _tecla_7 `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_7 ]
 [f ]
-"39
+"42
 [e ( _lcd_clear_display ..  ]
-"40
-[e ( _lcd_print (1 :s 13C ]
-"41
-[e :UE 696 ]
-}
 "43
+[e ( _lcd_print (1 :s 14C ]
+"44
+[e :UE 720 ]
+}
+"46
 [v _tecla_8 `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_8 ]
 [f ]
-"44
+"47
 [e ( _lcd_clear_display ..  ]
-"45
-[e ( _lcd_print (1 :s 14C ]
-"46
-[e :UE 697 ]
-}
 "48
+[e ( _lcd_print (1 :s 15C ]
+"49
+[e :UE 721 ]
+}
+"51
 [v _tecla_9 `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_9 ]
 [f ]
-"49
+"52
 [e ( _lcd_clear_display ..  ]
-"50
-[e ( _lcd_print (1 :s 15C ]
-"51
-[e :UE 698 ]
-}
 "53
+[e ( _lcd_print (1 :s 16C ]
+"54
+[e :UE 722 ]
+}
+"56
 [v _tecla_C `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_C ]
 [f ]
-"54
+"57
 [e ( _lcd_clear_display ..  ]
-"55
-[e ( _lcd_print (1 :s 16C ]
-"56
-[e :UE 699 ]
-}
 "58
+[e ( _lcd_print (1 :s 17C ]
+"59
+[e :UE 723 ]
+}
+"61
 [v _tecla_aste `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_aste ]
 [f ]
-"59
+"62
 [e ( _lcd_clear_display ..  ]
-"60
-[e ( _lcd_print (1 :s 17C ]
-"61
-[e :UE 700 ]
-}
 "63
+[e ( _lcd_print (1 :s 18C ]
+"64
+[e :UE 724 ]
+}
+"66
 [v _tecla_0 `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_0 ]
 [f ]
-"64
+"67
 [e ( _lcd_clear_display ..  ]
-"65
-[e ( _lcd_print (1 :s 18C ]
-"66
-[e :UE 701 ]
-}
 "68
+[e ( _lcd_print (1 :s 19C ]
+"69
+[e :UE 725 ]
+}
+"71
 [v _tecla_gato `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_gato ]
 [f ]
-"69
+"72
 [e ( _lcd_clear_display ..  ]
-"70
-[e ( _lcd_print (1 :s 19C ]
-"71
-[e :UE 702 ]
-}
 "73
+[e ( _lcd_print (1 :s 20C ]
+"74
+[e :UE 726 ]
+}
+"76
 [v _tecla_D `(v ~T0 @X0 1 ef ]
 {
 [e :U _tecla_D ]
 [f ]
-"74
+"77
 [e ( _lcd_clear_display ..  ]
-"75
-[e ( _lcd_print (1 :s 20C ]
-"76
-[e :UE 703 ]
+"78
+[e ( _lcd_print (1 :s 21C ]
+"79
+[e :UE 727 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
 "16 Main.c
@@ -1327,39 +1469,40 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _main ]
 [f ]
 "19
-[e ( _inicio_teclado ..  ]
-"21
-[e :U 706 ]
-{
+[e ( _int_teclado ..  ]
 "22
-[e ( _Inkey ..  ]
+[e :U 730 ]
+{
 "24
+[e ( _menu_teclado ..  ]
+"28
 }
-[e :U 705 ]
-[e $U 706  ]
-[e :U 707 ]
-"25
-[e $UE 704  ]
-"26
-[e :UE 704 ]
+[e :U 729 ]
+[e $U 730  ]
+[e :U 731 ]
+"29
+[e $UE 728  ]
+"30
+[e :UE 728 ]
 }
-[a 1C 18446744073709551551 68 101 115 101 97 32 104 97 99 101 114 0 ]
-[a 20C 68 0 ]
-[a 16C 67 0 ]
-[a 12C 66 0 ]
-[a 8C 65 0 ]
-[a 2C 117 110 32 114 101 103 105 115 116 114 111 63 0 ]
-[a 15C 57 0 ]
-[a 14C 56 0 ]
-[a 13C 55 0 ]
-[a 11C 54 0 ]
-[a 10C 53 0 ]
-[a 9C 52 0 ]
-[a 7C 51 0 ]
-[a 6C 50 0 ]
-[a 5C 49 0 ]
-[a 18C 48 0 ]
-[a 3C 42 47 83 105 32 111 32 35 47 67 111 110 116 46 0 ]
-[a 4C 105 110 105 99 105 97 110 100 111 32 114 101 103 46 0 ]
-[a 17C 42 0 ]
-[a 19C 35 0 ]
+[a 4C 65 103 114 101 103 97 114 0 ]
+[a 3C 82 101 103 105 115 116 114 111 0 ]
+[a 2C 73 110 105 99 105 111 0 ]
+[a 1C 69 115 99 111 103 101 32 111 112 99 105 111 110 0 ]
+[a 5C 65 108 97 114 109 97 0 ]
+[a 21C 68 0 ]
+[a 17C 67 0 ]
+[a 13C 66 0 ]
+[a 9C 65 0 ]
+[a 16C 57 0 ]
+[a 15C 56 0 ]
+[a 14C 55 0 ]
+[a 12C 54 0 ]
+[a 11C 53 0 ]
+[a 10C 52 0 ]
+[a 8C 51 0 ]
+[a 7C 50 0 ]
+[a 6C 49 0 ]
+[a 19C 48 0 ]
+[a 18C 42 0 ]
+[a 20C 35 0 ]
