@@ -8,7 +8,8 @@
 #include <xc.h>
 #include "LCD.h"
 #include "configuracion.h"
-#include "teclado.h"
+#include "Teclado.h"
+#include "Teclas.h"
 #define _XTAL_FREQ 4000000
 
 

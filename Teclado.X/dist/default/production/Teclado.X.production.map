@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=/opt/microchip/xc8/v2.05/pic/dat/en_msgs.txt -cs \
   -h+dist/default/production/Teclado.X.production.sym \
   --cmf=dist/default/production/Teclado.X.production.cmf -z -Q18F45K50 \
-  -o/tmp/xcXg6np6M --defsym=__MPLAB_BUILD=1 \
+  -o/tmp/xcXVjFXXd --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Teclado.X.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=060h-07FFh -pstack=STACK -ACODE=00h-07FFFh \
   -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
@@ -23,7 +23,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  /tmp/xcX7NtvK6.o dist/default/production/Teclado.X.production.o 
+  /tmp/xcXzzZAK9.o dist/default/production/Teclado.X.production.o 
 
 Object code version is 3.11
 
@@ -35,7 +35,7 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcX7NtvK6.o
+/tmp/xcXzzZAK9.o
                 init                                  0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
                 config                           300000   300000        E   300000       0
@@ -541,7 +541,7 @@ FUNCTION INFORMATION:
 
  *************** function _main *****************
  Defined at:
-		line 15 in file "Main.c"
+		line 16 in file "Main.c"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -571,7 +571,7 @@ Total ram usage:        0 bytes
 
  *************** function _inicio_teclado *****************
  Defined at:
-		line 62 in file "./teclado.h"
+		line 61 in file "./Teclado.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -600,7 +600,7 @@ Total ram usage:        0 bytes
 
  *************** function _Inkey *****************
  Defined at:
-		line 24 in file "./teclado.h"
+		line 24 in file "./Teclado.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -646,7 +646,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_gato *****************
  Defined at:
-		line 170 in file "./teclado.h"
+		line 68 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -677,7 +677,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_aste *****************
  Defined at:
-		line 160 in file "./teclado.h"
+		line 58 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -708,7 +708,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_D *****************
  Defined at:
-		line 175 in file "./teclado.h"
+		line 73 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -739,7 +739,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_C *****************
  Defined at:
-		line 155 in file "./teclado.h"
+		line 53 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -770,7 +770,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_B *****************
  Defined at:
-		line 135 in file "./teclado.h"
+		line 33 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -801,7 +801,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_A *****************
  Defined at:
-		line 117 in file "./teclado.h"
+		line 15 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -832,7 +832,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_9 *****************
  Defined at:
-		line 150 in file "./teclado.h"
+		line 48 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -863,7 +863,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_8 *****************
  Defined at:
-		line 145 in file "./teclado.h"
+		line 43 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -894,7 +894,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_7 *****************
  Defined at:
-		line 140 in file "./teclado.h"
+		line 38 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -925,7 +925,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_6 *****************
  Defined at:
-		line 130 in file "./teclado.h"
+		line 28 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -956,7 +956,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_5 *****************
  Defined at:
-		line 125 in file "./teclado.h"
+		line 23 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -987,7 +987,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_4 *****************
  Defined at:
-		line 121 in file "./teclado.h"
+		line 19 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1018,7 +1018,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_3 *****************
  Defined at:
-		line 112 in file "./teclado.h"
+		line 10 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1049,7 +1049,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_2 *****************
  Defined at:
-		line 108 in file "./teclado.h"
+		line 6 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1080,7 +1080,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_1 *****************
  Defined at:
-		line 103 in file "./teclado.h"
+		line 1 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1111,7 +1111,7 @@ Total ram usage:        0 bytes
 
  *************** function _tecla_0 *****************
  Defined at:
-		line 165 in file "./teclado.h"
+		line 63 in file "./Teclas.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -1371,7 +1371,7 @@ Total ram usage:        0 bytes
 MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
-./teclado.h
+./Teclas.h
 		_tecla_1       		CODE           	0AF0	0000	19
 		_tecla_A       		CODE           	0A4E	0000	19
 		_tecla_aste    		CODE           	0A06	0000	19
@@ -1379,9 +1379,7 @@ Module		Function		Class		Link	Load	Size
 		_tecla_D       		CODE           	0A18	0000	19
 		_tecla_7       		CODE           	0A84	0000	19
 		_tecla_gato    		CODE           	09F4	0000	19
-		_Inkey         		CODE           	085A	0000	221
 		_tecla_0       		CODE           	0B02	0000	19
-		_inicio_teclado		CODE           	0B3C	0000	11
 		_tecla_3       		CODE           	0ACC	0000	19
 		_tecla_C       		CODE           	0A2A	0000	19
 		_tecla_6       		CODE           	0A96	0000	19
@@ -1391,7 +1389,13 @@ Module		Function		Class		Link	Load	Size
 		_tecla_5       		CODE           	0AA8	0000	19
 		_tecla_8       		CODE           	0A72	0000	19
 
-./teclado.h estimated size: 536
+./Teclas.h estimated size: 304
+
+./Teclado.h
+		_Inkey         		CODE           	085A	0000	221
+		_inicio_teclado		CODE           	0B3C	0000	11
+
+./Teclado.h estimated size: 232
 
 ./LCD.h
 		_lcd_time_control		CODE           	0B14	0000	19
