@@ -11,22 +11,37 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$/tmp/xcXAOxOBn.o
+$/tmp/xcX7NtvK6.o
 idloc IDLOC 0 200000 200000 8 1
 init CODE 0 0 0 4 1
 config CONFIG 0 300000 300000 E 1
 $dist/default/production/Teclado.X.production.o
-cinit CODE 0 ACC ACC C 1
-text0 CODE 0 AD8 AD8 A 1
-text1 CODE 0 AE2 AE2 A 1
-text2 CODE 0 85A 85A 190 1
-text3 CODE 0 AA8 AA8 12 1
-text4 CODE 0 A54 A54 2A 1
-text5 CODE 0 A7E A7E 2A 1
-text6 CODE 0 AEC AEC 8 1
-text7 CODE 0 9EA 9EA 3A 1
-text8 CODE 0 A24 A24 30 1
-text9 CODE 0 ABA ABA 12 1
+cinit CODE 0 B26 B26 C 1
+text0 CODE 0 B32 B32 A 1
+text1 CODE 0 B3C B3C A 1
+text2 CODE 0 85A 85A DC 1
+text3 CODE 0 9F4 9F4 12 1
+text4 CODE 0 A06 A06 12 1
+text5 CODE 0 A18 A18 12 1
+text6 CODE 0 A2A A2A 12 1
+text7 CODE 0 A3C A3C 12 1
+text8 CODE 0 A4E A4E 12 1
+text9 CODE 0 A60 A60 12 1
+text10 CODE 0 A72 A72 12 1
+text11 CODE 0 A84 A84 12 1
+text12 CODE 0 A96 A96 12 1
+text13 CODE 0 AA8 AA8 12 1
+text14 CODE 0 ABA ABA 12 1
+text15 CODE 0 ACC ACC 12 1
+text16 CODE 0 ADE ADE 12 1
+text17 CODE 0 AF0 AF0 12 1
+text18 CODE 0 B02 B02 12 1
+text19 CODE 0 9A0 9A0 2A 1
+text20 CODE 0 9CA 9CA 2A 1
+text21 CODE 0 B46 B46 8 1
+text22 CODE 0 936 936 3A 1
+text23 CODE 0 970 970 30 1
+text24 CODE 0 B14 B14 12 1
 cstackCOMRAM COMRAM 1 1 1 4 1
 smallconst SMALLCONST 0 800 800 5A 1
 bssCOMRAM COMRAM 1 5 5 1 1
@@ -47,15 +62,15 @@ BANK5 500-5FF 1
 BANK6 600-6FF 1
 BANK7 700-7FF 1
 CONST 4-7FF 1
-CONST AF4-7FFF 1
+CONST B4E-7FFF 1
 STACK 60-7FF 1
-SMALLCONST AF4-7FFF 1
+SMALLCONST B4E-7FFF 1
 CODE 4-7FF 1
-CODE AF4-7FFF 1
+CODE B4E-7FFF 1
 BIGRAM 6-7FF 1
 COMRAM 6-5F 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST AF4-7FFF 1
+MEDIUMCONST B4E-7FFF 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -70,144 +85,158 @@ MEDIUMCONST AF4-7FFF 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production/Teclado.X.production.o
-ABA text9 CODE >150:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-ABA text9 CODE >151:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-ABC text9 CODE >152:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-AC2 text9 CODE >153:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-AC4 text9 CODE >154:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-ACA text9 CODE >155:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A24 text8 CODE >50:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A26 text8 CODE >51:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A28 text8 CODE >52:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A2E text8 CODE >53:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A32 text8 CODE >54:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A40 text8 CODE >55:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A44 text8 CODE >56:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A52 text8 CODE >57:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-9EA text7 CODE >28:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-9EA text7 CODE >29:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-9EC text7 CODE >30:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-9EE text7 CODE >31:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-9F2 text7 CODE >32:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-9F4 text7 CODE >33:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-9F6 text7 CODE >34:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-9FA text7 CODE >38:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A0A text7 CODE >39:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A10 text7 CODE >40:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A16 text7 CODE >41:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A1C text7 CODE >42:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A22 text7 CODE >43:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-AEC text6 CODE >76:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-AEC text6 CODE >77:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-AF2 text6 CODE >78:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A7E text5 CODE >64:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A80 text5 CODE >65:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A82 text5 CODE >66:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A88 text5 CODE >67:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A8C text5 CODE >68:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A9A text5 CODE >69:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A9E text5 CODE >70:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-AA6 text5 CODE >71:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A54 text4 CODE >90:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A54 text4 CODE >91:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A56 text4 CODE >93:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A66 text4 CODE >94:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-A6A text4 CODE >91:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
-AA8 text3 CODE >214:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-AA8 text3 CODE >215:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-AAC text3 CODE >216:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-AB8 text3 CODE >217:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-85A text2 CODE >22:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-85A text2 CODE >25:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-85E text2 CODE >26:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-860 text2 CODE >27:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-864 text2 CODE >29:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-866 text2 CODE >30:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-86A text2 CODE >33:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-872 text2 CODE >35:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-876 text2 CODE >38:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-87A text2 CODE >39:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-886 text2 CODE >41:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-88A text2 CODE >43:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-88E text2 CODE >46:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-892 text2 CODE >47:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-89E text2 CODE >49:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8A2 text2 CODE >51:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8A6 text2 CODE >54:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8AA text2 CODE >55:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8B6 text2 CODE >57:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8BA text2 CODE >59:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8BC text2 CODE >61:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8BE text2 CODE >62:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8C2 text2 CODE >65:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8C6 text2 CODE >66:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8D2 text2 CODE >68:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8D6 text2 CODE >70:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8DA text2 CODE >73:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8DE text2 CODE >74:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8EA text2 CODE >76:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8EE text2 CODE >78:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8F2 text2 CODE >81:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-8F6 text2 CODE >82:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-902 text2 CODE >84:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-906 text2 CODE >86:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-90A text2 CODE >89:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-90E text2 CODE >90:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-91A text2 CODE >92:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-91E text2 CODE >94:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-920 text2 CODE >98:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-922 text2 CODE >99:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-926 text2 CODE >102:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-92A text2 CODE >103:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-936 text2 CODE >105:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-93A text2 CODE >107:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-93E text2 CODE >110:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-942 text2 CODE >111:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-94E text2 CODE >113:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-952 text2 CODE >115:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-956 text2 CODE >118:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-95A text2 CODE >119:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-966 text2 CODE >121:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-96A text2 CODE >123:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-96E text2 CODE >126:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-972 text2 CODE >127:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-97E text2 CODE >129:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-982 text2 CODE >131:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-984 text2 CODE >135:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-986 text2 CODE >136:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-98A text2 CODE >139:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-98E text2 CODE >140:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-99A text2 CODE >142:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-99E text2 CODE >144:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-9A2 text2 CODE >147:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-9A6 text2 CODE >148:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-9B2 text2 CODE >150:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-9B6 text2 CODE >152:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-9BA text2 CODE >155:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-9BE text2 CODE >156:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-9CA text2 CODE >158:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-9CE text2 CODE >160:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-9D2 text2 CODE >163:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-9D6 text2 CODE >164:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-9E2 text2 CODE >166:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-9E6 text2 CODE >168:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-9E8 text2 CODE >171:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-AE2 text1 CODE >173:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-AE2 text1 CODE >176:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-AE4 text1 CODE >177:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-AEA text1 CODE >178:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
-AD8 text0 CODE >15:/home/francisco/Documentos/Beca/Teclado/Teclado.X/Main.c
-AD8 text0 CODE >18:/home/francisco/Documentos/Beca/Teclado/Teclado.X/Main.c
-ADC text0 CODE >21:/home/francisco/Documentos/Beca/Teclado/Teclado.X/Main.c
-ACC cinit CODE >776:/tmp/xcXkUGkA5
-ACC cinit CODE >778:/tmp/xcXkUGkA5
-ACC cinit CODE >781:/tmp/xcXkUGkA5
-ACC cinit CODE >793:/tmp/xcXkUGkA5
-ACE cinit CODE >799:/tmp/xcXkUGkA5
-ACE cinit CODE >802:/tmp/xcXkUGkA5
-AD0 cinit CODE >803:/tmp/xcXkUGkA5
-AD2 cinit CODE >804:/tmp/xcXkUGkA5
-AD4 cinit CODE >805:/tmp/xcXkUGkA5
+B14 text24 CODE >150:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+B14 text24 CODE >151:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+B16 text24 CODE >152:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+B1C text24 CODE >153:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+B1E text24 CODE >154:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+B24 text24 CODE >155:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+970 text23 CODE >50:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+972 text23 CODE >51:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+974 text23 CODE >52:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+97A text23 CODE >53:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+97E text23 CODE >54:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+98C text23 CODE >55:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+990 text23 CODE >56:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+99E text23 CODE >57:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+936 text22 CODE >28:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+936 text22 CODE >29:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+938 text22 CODE >30:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+93A text22 CODE >31:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+93E text22 CODE >32:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+940 text22 CODE >33:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+942 text22 CODE >34:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+946 text22 CODE >38:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+956 text22 CODE >39:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+95C text22 CODE >40:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+962 text22 CODE >41:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+968 text22 CODE >42:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+96E text22 CODE >43:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+B46 text21 CODE >76:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+B46 text21 CODE >77:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+B4C text21 CODE >78:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+9CA text20 CODE >64:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+9CC text20 CODE >65:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+9CE text20 CODE >66:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+9D4 text20 CODE >67:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+9D8 text20 CODE >68:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+9E6 text20 CODE >69:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+9EA text20 CODE >70:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+9F2 text20 CODE >71:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+9A0 text19 CODE >90:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+9A0 text19 CODE >91:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+9A2 text19 CODE >93:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+9B2 text19 CODE >94:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+9B6 text19 CODE >91:/home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
+B02 text18 CODE >165:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+B02 text18 CODE >166:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+B06 text18 CODE >167:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+B12 text18 CODE >168:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+AF0 text17 CODE >103:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+AF0 text17 CODE >104:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+AF4 text17 CODE >105:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+B00 text17 CODE >106:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+ADE text16 CODE >108:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+ADE text16 CODE >109:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+AE2 text16 CODE >110:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+AEE text16 CODE >111:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+ACC text15 CODE >112:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+ACC text15 CODE >113:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+AD0 text15 CODE >114:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+ADC text15 CODE >116:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+ABA text14 CODE >121:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+ABA text14 CODE >122:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+ABE text14 CODE >123:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+ACA text14 CODE >124:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+AA8 text13 CODE >125:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+AA8 text13 CODE >126:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+AAC text13 CODE >127:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+AB8 text13 CODE >128:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A96 text12 CODE >130:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A96 text12 CODE >131:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A9A text12 CODE >132:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+AA6 text12 CODE >133:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A84 text11 CODE >140:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A84 text11 CODE >141:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A88 text11 CODE >142:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A94 text11 CODE >143:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A72 text10 CODE >145:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A72 text10 CODE >146:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A76 text10 CODE >147:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A82 text10 CODE >148:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A60 text9 CODE >150:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A60 text9 CODE >151:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A64 text9 CODE >152:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A70 text9 CODE >153:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A4E text8 CODE >117:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A4E text8 CODE >118:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A52 text8 CODE >119:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A5E text8 CODE >120:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A3C text7 CODE >135:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A3C text7 CODE >136:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A40 text7 CODE >137:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A4C text7 CODE >138:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A2A text6 CODE >155:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A2A text6 CODE >156:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A2E text6 CODE >157:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A3A text6 CODE >158:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A18 text5 CODE >175:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A18 text5 CODE >176:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A1C text5 CODE >177:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A28 text5 CODE >178:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A06 text4 CODE >160:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A06 text4 CODE >161:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A0A text4 CODE >162:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A16 text4 CODE >163:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+9F4 text3 CODE >170:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+9F4 text3 CODE >171:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+9F8 text3 CODE >172:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+A04 text3 CODE >173:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+85A text2 CODE >24:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+85A text2 CODE >27:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+85E text2 CODE >28:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+860 text2 CODE >29:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+864 text2 CODE >31:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+866 text2 CODE >32:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+872 text2 CODE >33:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+87E text2 CODE >34:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+88A text2 CODE >35:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+896 text2 CODE >36:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+898 text2 CODE >38:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+89A text2 CODE >39:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+8A6 text2 CODE >40:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+8B2 text2 CODE >41:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+8BE text2 CODE >42:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+8CA text2 CODE >43:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+8CC text2 CODE >45:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+8CE text2 CODE >46:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+8DA text2 CODE >47:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+8E6 text2 CODE >48:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+8F2 text2 CODE >49:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+8FE text2 CODE >50:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+900 text2 CODE >52:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+902 text2 CODE >53:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+90E text2 CODE >54:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+91A text2 CODE >55:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+926 text2 CODE >56:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+932 text2 CODE >57:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+934 text2 CODE >60:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+B3C text1 CODE >62:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+B3C text1 CODE >65:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+B3E text1 CODE >66:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+B44 text1 CODE >67:/home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+B32 text0 CODE >15:/home/francisco/Documentos/Beca/Teclado/Teclado.X/Main.c
+B32 text0 CODE >18:/home/francisco/Documentos/Beca/Teclado/Teclado.X/Main.c
+B36 text0 CODE >21:/home/francisco/Documentos/Beca/Teclado/Teclado.X/Main.c
+B26 cinit CODE >819:/tmp/xcXnZVpHM
+B26 cinit CODE >821:/tmp/xcXnZVpHM
+B26 cinit CODE >824:/tmp/xcXnZVpHM
+B26 cinit CODE >836:/tmp/xcXnZVpHM
+B28 cinit CODE >842:/tmp/xcXnZVpHM
+B28 cinit CODE >845:/tmp/xcXnZVpHM
+B2A cinit CODE >846:/tmp/xcXnZVpHM
+B2C cinit CODE >847:/tmp/xcXnZVpHM
+B2E cinit CODE >848:/tmp/xcXnZVpHM
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -227,29 +256,31 @@ __Hspace_1 6 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __CFG_IESO$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production/Teclado.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcXAOxOBn.o
-__end_of_inicio_teclado AEC 0 CODE 0 text1 dist/default/production/Teclado.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst /tmp/xcX7NtvK6.o
+__end_of_inicio_teclado B46 0 CODE 0 text1 dist/default/production/Teclado.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/Teclado.X.production.o
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 lcd_print@dato 3 0 COMRAM 1 cstackCOMRAM dist/default/production/Teclado.X.production.o
 __Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production/Teclado.X.production.o
 _LATA F89 0 ABS 0 - dist/default/production/Teclado.X.production.o
-___sp 0 0 STACK 2 stack /tmp/xcXAOxOBn.o
-_main AD8 0 CODE 0 text0 dist/default/production/Teclado.X.production.o
-start 0 0 CODE 0 init /tmp/xcXAOxOBn.o
+___sp 0 0 STACK 2 stack /tmp/xcX7NtvK6.o
+_main B32 0 CODE 0 text0 dist/default/production/Teclado.X.production.o
+start 0 0 CODE 0 init /tmp/xcX7NtvK6.o
 __size_of_main 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
-__end_of_lcd_time_control ACC 0 CODE 0 text9 dist/default/production/Teclado.X.production.o
+__end_of_lcd_time_control B26 0 CODE 0 text24 dist/default/production/Teclado.X.production.o
 __CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/Teclado.X.production.o
-__end_of_lcd_clear_display AF4 0 CODE 0 text6 dist/default/production/Teclado.X.production.o
+__end_of_lcd_clear_display B4E 0 CODE 0 text21 dist/default/production/Teclado.X.production.o
+__end_of_tecla_aste A18 0 CODE 0 text4 dist/default/production/Teclado.X.production.o
+__end_of_tecla_gato A06 0 CODE 0 text3 dist/default/production/Teclado.X.production.o
 __size_of_lcd_time_control 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production/Teclado.X.production.o
-__end_of_lcd_print A7E 0 CODE 0 text4 dist/default/production/Teclado.X.production.o
-__accesstop 60 0 ABS 0 - /tmp/xcXAOxOBn.o
-intlevel0 0 0 CODE 0 text /tmp/xcXAOxOBn.o
-intlevel1 0 0 CODE 0 text /tmp/xcXAOxOBn.o
-intlevel2 0 0 CODE 0 text /tmp/xcXAOxOBn.o
-intlevel3 0 0 CODE 0 text /tmp/xcXAOxOBn.o
+__end_of_lcd_print 9CA 0 CODE 0 text19 dist/default/production/Teclado.X.production.o
+__accesstop 60 0 ABS 0 - /tmp/xcX7NtvK6.o
+intlevel0 0 0 CODE 0 text /tmp/xcX7NtvK6.o
+intlevel1 0 0 CODE 0 text /tmp/xcX7NtvK6.o
+intlevel2 0 0 CODE 0 text /tmp/xcX7NtvK6.o
+intlevel3 0 0 CODE 0 text /tmp/xcX7NtvK6.o
 __size_of_lcd_print 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production/Teclado.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/Teclado.X.production.o
@@ -260,24 +291,24 @@ __CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production/Teclado.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production/Teclado.X.production.o
-_lcd_print A54 0 CODE 0 text4 dist/default/production/Teclado.X.production.o
+_lcd_print 9A0 0 CODE 0 text19 dist/default/production/Teclado.X.production.o
 _ANSELB F5C 0 ABS 0 - dist/default/production/Teclado.X.production.o
-___inthi_sp 0 0 STACK 2 stack /tmp/xcXAOxOBn.o
-___intlo_sp 0 0 STACK 2 stack /tmp/xcXAOxOBn.o
+___inthi_sp 0 0 STACK 2 stack /tmp/xcX7NtvK6.o
+___intlo_sp 0 0 STACK 2 stack /tmp/xcX7NtvK6.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production/Teclado.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/Teclado.X.production.o
 __CFG_PCLKEN$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production/Teclado.X.production.o
 __Hintcodelo 0 0 CODE 0 intcodelo dist/default/production/Teclado.X.production.o
-_lcd_clear_display AEC 0 CODE 0 text6 dist/default/production/Teclado.X.production.o
+_lcd_clear_display B46 0 CODE 0 text21 dist/default/production/Teclado.X.production.o
 __CFG_CCP2MX$RC1 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __size_of_Inkey 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 _INTCON2bits FF1 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production/Teclado.X.production.o
 __CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
-start_initialization ACC 0 CODE 0 cinit dist/default/production/Teclado.X.production.o
+start_initialization B26 0 CODE 0 cinit dist/default/production/Teclado.X.production.o
 __CFG_PBADEN$ON 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
-_lcd_control A24 0 CODE 0 text8 dist/default/production/Teclado.X.production.o
+_lcd_control 970 0 CODE 0 text23 dist/default/production/Teclado.X.production.o
 __CFG_FOSC$INTOSCIO 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production/Teclado.X.production.o
 _TRISEbits F96 0 ABS 0 - dist/default/production/Teclado.X.production.o
@@ -285,6 +316,8 @@ ___rparam_used 1 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 lcd_dato@dato 2 0 COMRAM 1 cstackCOMRAM dist/default/production/Teclado.X.production.o
 __CFG_CFGPLLEN$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_aste 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_gato 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/production/Teclado.X.production.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/production/Teclado.X.production.o
 __Hbank2 0 0 ABS 0 bank2 dist/default/production/Teclado.X.production.o
@@ -313,12 +346,25 @@ __Htext8 0 0 ABS 0 text8 dist/default/production/Teclado.X.production.o
 __Htext9 0 0 ABS 0 text9 dist/default/production/Teclado.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production/Teclado.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production/Teclado.X.production.o
-__smallconst 800 0 SMALLCONST 0 smallconst /tmp/xcXAOxOBn.o
+__smallconst 800 0 SMALLCONST 0 smallconst /tmp/xcX7NtvK6.o
 __size_of_lcd_dato 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __size_of_lcd_init 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production/Teclado.X.production.o
 __Hconfig 30000E 0 CONFIG 0 config dist/default/production/Teclado.X.production.o
+__size_of_tecla_0 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __size_of_tecla_1 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_2 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_3 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_4 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_5 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_6 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_7 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_8 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_9 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_A 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_B 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_C 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__size_of_tecla_D 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Lbank0 0 0 ABS 0 bank0 dist/default/production/Teclado.X.production.o
 __Lbank1 0 0 ABS 0 bank1 dist/default/production/Teclado.X.production.o
 __Lbank2 0 0 ABS 0 bank2 dist/default/production/Teclado.X.production.o
@@ -374,28 +420,71 @@ _val 5 0 COMRAM 1 bssCOMRAM dist/default/production/Teclado.X.production.o
 lcd_control@dato 2 0 COMRAM 1 cstackCOMRAM dist/default/production/Teclado.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production/Teclado.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production/Teclado.X.production.o
-_lcd_dato A7E 0 CODE 0 text5 dist/default/production/Teclado.X.production.o
-_lcd_init 9EA 0 CODE 0 text7 dist/default/production/Teclado.X.production.o
+_lcd_dato 9CA 0 CODE 0 text20 dist/default/production/Teclado.X.production.o
+_lcd_init 936 0 CODE 0 text22 dist/default/production/Teclado.X.production.o
 __CFG_BORV$190 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Lintentry 0 0 ABS 0 intentry dist/default/production/Teclado.X.production.o
 __Hramtop 800 0 RAM 0 ramtop dist/default/production/Teclado.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production/Teclado.X.production.o
 __activetblptr 2 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Hstruct 0 0 COMRAM 1 struct dist/default/production/Teclado.X.production.o
-__end_of_lcd_dato AA8 0 CODE 0 text5 dist/default/production/Teclado.X.production.o
-__end_of_lcd_init A24 0 CODE 0 text7 dist/default/production/Teclado.X.production.o
+__end_of_lcd_dato 9F4 0 CODE 0 text20 dist/default/production/Teclado.X.production.o
+__end_of_lcd_init 970 0 CODE 0 text22 dist/default/production/Teclado.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production/Teclado.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production/Teclado.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production/Teclado.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production/Teclado.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production/Teclado.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production/Teclado.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production/Teclado.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production/Teclado.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production/Teclado.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production/Teclado.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production/Teclado.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production/Teclado.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production/Teclado.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production/Teclado.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production/Teclado.X.production.o
 __CFG_LS48MHZ$SYS24X4 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __CFG_CPUDIV$NOCLKDIV 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
+__ptext10 A72 0 CODE 0 text10 dist/default/production/Teclado.X.production.o
+__ptext11 A84 0 CODE 0 text11 dist/default/production/Teclado.X.production.o
+__ptext12 A96 0 CODE 0 text12 dist/default/production/Teclado.X.production.o
+__ptext13 AA8 0 CODE 0 text13 dist/default/production/Teclado.X.production.o
+__ptext14 ABA 0 CODE 0 text14 dist/default/production/Teclado.X.production.o
+__ptext15 ACC 0 CODE 0 text15 dist/default/production/Teclado.X.production.o
+__ptext16 ADE 0 CODE 0 text16 dist/default/production/Teclado.X.production.o
+__ptext17 AF0 0 CODE 0 text17 dist/default/production/Teclado.X.production.o
+__ptext18 B02 0 CODE 0 text18 dist/default/production/Teclado.X.production.o
+__ptext19 9A0 0 CODE 0 text19 dist/default/production/Teclado.X.production.o
+__ptext20 9CA 0 CODE 0 text20 dist/default/production/Teclado.X.production.o
+__ptext21 B46 0 CODE 0 text21 dist/default/production/Teclado.X.production.o
+__ptext22 936 0 CODE 0 text22 dist/default/production/Teclado.X.production.o
+__ptext23 970 0 CODE 0 text23 dist/default/production/Teclado.X.production.o
+__ptext24 B14 0 CODE 0 text24 dist/default/production/Teclado.X.production.o
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production/Teclado.X.production.o
 __Lbigram 0 0 ABS 0 bigram dist/default/production/Teclado.X.production.o
-__end_of_tecla_1 ABA 0 CODE 0 text3 dist/default/production/Teclado.X.production.o
+__end_of_tecla_0 B14 0 CODE 0 text18 dist/default/production/Teclado.X.production.o
+__end_of_tecla_1 B02 0 CODE 0 text17 dist/default/production/Teclado.X.production.o
+__end_of_tecla_2 AF0 0 CODE 0 text16 dist/default/production/Teclado.X.production.o
+__end_of_tecla_3 ADE 0 CODE 0 text15 dist/default/production/Teclado.X.production.o
+__end_of_tecla_4 ACC 0 CODE 0 text14 dist/default/production/Teclado.X.production.o
+__end_of_tecla_5 ABA 0 CODE 0 text13 dist/default/production/Teclado.X.production.o
+__end_of_tecla_6 AA8 0 CODE 0 text12 dist/default/production/Teclado.X.production.o
+__end_of_tecla_7 A96 0 CODE 0 text11 dist/default/production/Teclado.X.production.o
+__end_of_tecla_8 A84 0 CODE 0 text10 dist/default/production/Teclado.X.production.o
+__end_of_tecla_9 A72 0 CODE 0 text9 dist/default/production/Teclado.X.production.o
+__end_of_tecla_A A60 0 CODE 0 text8 dist/default/production/Teclado.X.production.o
+__end_of_tecla_B A4E 0 CODE 0 text7 dist/default/production/Teclado.X.production.o
+__end_of_tecla_C A3C 0 CODE 0 text6 dist/default/production/Teclado.X.production.o
+__end_of_tecla_D A2A 0 CODE 0 text5 dist/default/production/Teclado.X.production.o
 __Lcomram 0 0 ABS 0 comram dist/default/production/Teclado.X.production.o
 __Lconfig 300000 0 CONFIG 0 config dist/default/production/Teclado.X.production.o
 _LATEbits F8D 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production/Teclado.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production/Teclado.X.production.o
-stackhi 7FF 0 ABS 0 - /tmp/xcXAOxOBn.o
-stacklo 60 0 ABS 0 - /tmp/xcXAOxOBn.o
+stackhi 7FF 0 ABS 0 - /tmp/xcX7NtvK6.o
+stacklo 60 0 ABS 0 - /tmp/xcX7NtvK6.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production/Teclado.X.production.o
 __CFG_PLLSEL$PLL4X 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production/Teclado.X.production.o
@@ -407,27 +496,42 @@ __Lspace_1 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __pbssCOMRAM 5 0 COMRAM 1 bssCOMRAM dist/default/production/Teclado.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production/Teclado.X.production.o
-__end_of_lcd_control A54 0 CODE 0 text8 dist/default/production/Teclado.X.production.o
-end_of_initialization ACE 0 CODE 0 cinit dist/default/production/Teclado.X.production.o
+__end_of_lcd_control 9A0 0 CODE 0 text23 dist/default/production/Teclado.X.production.o
+end_of_initialization B28 0 CODE 0 cinit dist/default/production/Teclado.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production/Teclado.X.production.o
 __Hintentry 0 0 ABS 0 intentry dist/default/production/Teclado.X.production.o
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec dist/default/production/Teclado.X.production.o
 __Lramtop 800 0 RAM 0 ramtop dist/default/production/Teclado.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production/Teclado.X.production.o
-__pcinit ACC 0 CODE 0 cinit dist/default/production/Teclado.X.production.o
-__ptext0 AD8 0 CODE 0 text0 dist/default/production/Teclado.X.production.o
-__ptext1 AE2 0 CODE 0 text1 dist/default/production/Teclado.X.production.o
+__pcinit B26 0 CODE 0 cinit dist/default/production/Teclado.X.production.o
+__ptext0 B32 0 CODE 0 text0 dist/default/production/Teclado.X.production.o
+__ptext1 B3C 0 CODE 0 text1 dist/default/production/Teclado.X.production.o
 __ptext2 85A 0 CODE 0 text2 dist/default/production/Teclado.X.production.o
-__ptext3 AA8 0 CODE 0 text3 dist/default/production/Teclado.X.production.o
-__ptext4 A54 0 CODE 0 text4 dist/default/production/Teclado.X.production.o
-__ptext5 A7E 0 CODE 0 text5 dist/default/production/Teclado.X.production.o
-__ptext6 AEC 0 CODE 0 text6 dist/default/production/Teclado.X.production.o
-__ptext7 9EA 0 CODE 0 text7 dist/default/production/Teclado.X.production.o
-__ptext8 A24 0 CODE 0 text8 dist/default/production/Teclado.X.production.o
-__ptext9 ABA 0 CODE 0 text9 dist/default/production/Teclado.X.production.o
+__ptext3 9F4 0 CODE 0 text3 dist/default/production/Teclado.X.production.o
+__ptext4 A06 0 CODE 0 text4 dist/default/production/Teclado.X.production.o
+__ptext5 A18 0 CODE 0 text5 dist/default/production/Teclado.X.production.o
+__ptext6 A2A 0 CODE 0 text6 dist/default/production/Teclado.X.production.o
+__ptext7 A3C 0 CODE 0 text7 dist/default/production/Teclado.X.production.o
+__ptext8 A4E 0 CODE 0 text8 dist/default/production/Teclado.X.production.o
+__ptext9 A60 0 CODE 0 text9 dist/default/production/Teclado.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production/Teclado.X.production.o
-__ramtop 800 0 RAM 0 ramtop /tmp/xcXAOxOBn.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production/Teclado.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production/Teclado.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production/Teclado.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production/Teclado.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production/Teclado.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production/Teclado.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production/Teclado.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production/Teclado.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production/Teclado.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production/Teclado.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production/Teclado.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production/Teclado.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production/Teclado.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production/Teclado.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production/Teclado.X.production.o
+__ramtop 800 0 RAM 0 ramtop /tmp/xcX7NtvK6.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production/Teclado.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production/Teclado.X.production.o
 __psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production/Teclado.X.production.o
@@ -435,7 +539,7 @@ __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production/Teclado.X.production.o
 __CFG_SDOMX$RB3 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production/Teclado.X.production.o
-__end_of__initialization ACE 0 CODE 0 cinit dist/default/production/Teclado.X.production.o
+__end_of__initialization B28 0 CODE 0 cinit dist/default/production/Teclado.X.production.o
 __CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
@@ -448,11 +552,11 @@ __size_of_lcd_clear_display 0 0 ABS 0 - dist/default/production/Teclado.X.produc
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production/Teclado.X.production.o
 __CFG_nLPBOR$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production/Teclado.X.production.o
-_lcd_time_control ABA 0 CODE 0 text9 dist/default/production/Teclado.X.production.o
+_lcd_time_control B14 0 CODE 0 text24 dist/default/production/Teclado.X.production.o
 __CFG_BOREN$SBORDIS 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
-__end_of_main AE2 0 CODE 0 text0 dist/default/production/Teclado.X.production.o
-__end_of_Inkey 9EA 0 CODE 0 text2 dist/default/production/Teclado.X.production.o
-_inicio_teclado AE2 0 CODE 0 text1 dist/default/production/Teclado.X.production.o
+__end_of_main B3C 0 CODE 0 text0 dist/default/production/Teclado.X.production.o
+__end_of_Inkey 936 0 CODE 0 text2 dist/default/production/Teclado.X.production.o
+_inicio_teclado B3C 0 CODE 0 text1 dist/default/production/Teclado.X.production.o
 _Inkey 85A 0 CODE 0 text2 dist/default/production/Teclado.X.production.o
 _PORTB F81 0 ABS 0 - dist/default/production/Teclado.X.production.o
 _TRISA F92 0 ABS 0 - dist/default/production/Teclado.X.production.o
@@ -471,12 +575,27 @@ __CFG_CP2$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __CFG_CP3$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __CFG_CPB$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 __CFG_CPD$OFF 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
-__initialization ACC 0 CODE 0 cinit dist/default/production/Teclado.X.production.o
+_tecla_aste A06 0 CODE 0 text4 dist/default/production/Teclado.X.production.o
+_tecla_gato 9F4 0 CODE 0 text3 dist/default/production/Teclado.X.production.o
+__initialization B26 0 CODE 0 cinit dist/default/production/Teclado.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production/Teclado.X.production.o
 __Hsmallconst 85A 0 SMALLCONST 0 smallconst dist/default/production/Teclado.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production/Teclado.X.production.o
 __CFG_T3CMX$RC0 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
-_tecla_1 AA8 0 CODE 0 text3 dist/default/production/Teclado.X.production.o
+_tecla_0 B02 0 CODE 0 text18 dist/default/production/Teclado.X.production.o
+_tecla_1 AF0 0 CODE 0 text17 dist/default/production/Teclado.X.production.o
+_tecla_2 ADE 0 CODE 0 text16 dist/default/production/Teclado.X.production.o
+_tecla_3 ACC 0 CODE 0 text15 dist/default/production/Teclado.X.production.o
+_tecla_4 ABA 0 CODE 0 text14 dist/default/production/Teclado.X.production.o
+_tecla_5 AA8 0 CODE 0 text13 dist/default/production/Teclado.X.production.o
+_tecla_6 A96 0 CODE 0 text12 dist/default/production/Teclado.X.production.o
+_tecla_7 A84 0 CODE 0 text11 dist/default/production/Teclado.X.production.o
+_tecla_8 A72 0 CODE 0 text10 dist/default/production/Teclado.X.production.o
+_tecla_9 A60 0 CODE 0 text9 dist/default/production/Teclado.X.production.o
+_tecla_A A4E 0 CODE 0 text8 dist/default/production/Teclado.X.production.o
+_tecla_B A3C 0 CODE 0 text7 dist/default/production/Teclado.X.production.o
+_tecla_C A2A 0 CODE 0 text6 dist/default/production/Teclado.X.production.o
+_tecla_D A18 0 CODE 0 text5 dist/default/production/Teclado.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production/Teclado.X.production.o
 __Hintcode 0 0 CODE 0 intcode dist/default/production/Teclado.X.production.o
 __size_of_lcd_control 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
@@ -505,7 +624,7 @@ __size_of_lcd_control 0 0 ABS 0 - dist/default/production/Teclado.X.production.o
 # All other numeric quantities are in decimal.
 %SEGMENTS
 idloc 0 200000 200000 8 1
-text2 0 85A 85A 29A 1
+text2 0 85A 85A 2F4 1
 cstackCOMRAM 1 1 1 5 1
 reset_vec 0 0 0 4 1
 smallconst 0 800 800 5A 1

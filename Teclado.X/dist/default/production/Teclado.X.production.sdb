@@ -19,12 +19,42 @@
 [v _lcd_time_control lcd_time_control `(v  1 e 1 0 ]
 "192
 [v _lcd_Pos lcd_Pos `(v  1 e 1 0 ]
-"22 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+"24 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
 [v _Inkey Inkey `(uc  1 e 1 0 ]
-"173
+"62
 [v _inicio_teclado inicio_teclado `(v  1 e 1 0 ]
-"214
+"103
 [v _tecla_1 tecla_1 `(v  1 e 1 0 ]
+"108
+[v _tecla_2 tecla_2 `(v  1 e 1 0 ]
+"112
+[v _tecla_3 tecla_3 `(v  1 e 1 0 ]
+"117
+[v _tecla_A tecla_A `(v  1 e 1 0 ]
+"121
+[v _tecla_4 tecla_4 `(v  1 e 1 0 ]
+"125
+[v _tecla_5 tecla_5 `(v  1 e 1 0 ]
+"130
+[v _tecla_6 tecla_6 `(v  1 e 1 0 ]
+"135
+[v _tecla_B tecla_B `(v  1 e 1 0 ]
+"140
+[v _tecla_7 tecla_7 `(v  1 e 1 0 ]
+"145
+[v _tecla_8 tecla_8 `(v  1 e 1 0 ]
+"150
+[v _tecla_9 tecla_9 `(v  1 e 1 0 ]
+"155
+[v _tecla_C tecla_C `(v  1 e 1 0 ]
+"160
+[v _tecla_aste tecla_aste `(v  1 e 1 0 ]
+"165
+[v _tecla_0 tecla_0 `(v  1 e 1 0 ]
+"170
+[v _tecla_gato tecla_gato `(v  1 e 1 0 ]
+"175
+[v _tecla_D tecla_D `(v  1 e 1 0 ]
 "4 /opt/microchip/xc8/v2.05/pic/sources/c99/common/fleq.c
 [v ___fleq __fleq `(b  1 e 0 0 ]
 "62 /opt/microchip/xc8/v2.05/pic/sources/c99/common/float.c
@@ -51,7 +81,7 @@
 [v ___omul __omul `(uo  1 e 8 0 ]
 "15 /home/francisco/Documentos/Beca/Teclado/Teclado.X/Main.c
 [v _main main `(v  1 e 1 0 ]
-"17 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+"2 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
 [v _val val `uc  1 e 1 0 ]
 "277 /opt/microchip/xc8/v2.05/pic/include/pic18f45k50.h
 [v _ANSELB ANSELB `VEuc  1 e 1 @3932 ]
@@ -110,11 +140,11 @@
 ]
 [u S34 . 1 `S24 1 . 1 0 `S30 1 . 1 0 ]
 [v _TRISEbits TRISEbits `VES34  1 e 1 @3990 ]
-[s S142 . 1 `uc 1 . 1 0 :7:0 
+[s S202 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 NOT_RBPU 1 0 :1:7 
 ]
 "13175
-[s S145 . 1 `uc 1 IOCIP 1 0 :1:0 
+[s S205 . 1 `uc 1 IOCIP 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 TMR0IP 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -123,32 +153,107 @@
 `uc 1 INTEDG0 1 0 :1:6 
 `uc 1 nRBPU 1 0 :1:7 
 ]
-[s S154 . 1 `uc 1 . 1 0 :2:0 
+[s S214 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IP 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 RBPU 1 0 :1:7 
 ]
-[u S159 . 1 `S142 1 . 1 0 `S145 1 . 1 0 `S154 1 . 1 0 ]
-[v _INTCON2bits INTCON2bits `VES159  1 e 1 @4081 ]
+[u S219 . 1 `S202 1 . 1 0 `S205 1 . 1 0 `S214 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES219  1 e 1 @4081 ]
 "15 /home/francisco/Documentos/Beca/Teclado/Teclado.X/Main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "25
 } 0
-"173 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
+"62 /home/francisco/Documentos/Beca/Teclado/Teclado.X/teclado.h
 [v _inicio_teclado inicio_teclado `(v  1 e 1 0 ]
+{
+"67
+} 0
+"24
+[v _Inkey Inkey `(uc  1 e 1 0 ]
+{
+"60
+} 0
+"170
+[v _tecla_gato tecla_gato `(v  1 e 1 0 ]
+{
+"173
+} 0
+"160
+[v _tecla_aste tecla_aste `(v  1 e 1 0 ]
+{
+"163
+} 0
+"175
+[v _tecla_D tecla_D `(v  1 e 1 0 ]
 {
 "178
 } 0
-"22
-[v _Inkey Inkey `(uc  1 e 1 0 ]
+"155
+[v _tecla_C tecla_C `(v  1 e 1 0 ]
 {
-"171
+"158
 } 0
-"214
+"135
+[v _tecla_B tecla_B `(v  1 e 1 0 ]
+{
+"138
+} 0
+"117
+[v _tecla_A tecla_A `(v  1 e 1 0 ]
+{
+"120
+} 0
+"150
+[v _tecla_9 tecla_9 `(v  1 e 1 0 ]
+{
+"153
+} 0
+"145
+[v _tecla_8 tecla_8 `(v  1 e 1 0 ]
+{
+"148
+} 0
+"140
+[v _tecla_7 tecla_7 `(v  1 e 1 0 ]
+{
+"143
+} 0
+"130
+[v _tecla_6 tecla_6 `(v  1 e 1 0 ]
+{
+"133
+} 0
+"125
+[v _tecla_5 tecla_5 `(v  1 e 1 0 ]
+{
+"128
+} 0
+"121
+[v _tecla_4 tecla_4 `(v  1 e 1 0 ]
+{
+"124
+} 0
+"112
+[v _tecla_3 tecla_3 `(v  1 e 1 0 ]
+{
+"116
+} 0
+"108
+[v _tecla_2 tecla_2 `(v  1 e 1 0 ]
+{
+"111
+} 0
+"103
 [v _tecla_1 tecla_1 `(v  1 e 1 0 ]
 {
-"217
+"106
+} 0
+"165
+[v _tecla_0 tecla_0 `(v  1 e 1 0 ]
+{
+"168
 } 0
 "90 /home/francisco/Documentos/Beca/Teclado/Teclado.X/LCD.h
 [v _lcd_print lcd_print `(v  1 e 1 0 ]

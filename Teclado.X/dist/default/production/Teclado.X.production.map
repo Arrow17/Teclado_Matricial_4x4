@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=/opt/microchip/xc8/v2.05/pic/dat/en_msgs.txt -cs \
   -h+dist/default/production/Teclado.X.production.sym \
   --cmf=dist/default/production/Teclado.X.production.cmf -z -Q18F45K50 \
-  -o/tmp/xcXz3I0bD --defsym=__MPLAB_BUILD=1 \
+  -o/tmp/xcXg6np6M --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Teclado.X.production.map -E1 -ver=XC8 \
   --acfsm=1493 -ASTACK=060h-07FFh -pstack=STACK -ACODE=00h-07FFFh \
   -ACONST=00h-07FFFh -ASMALLCONST=0800h-08FFhx120 \
@@ -23,7 +23,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  /tmp/xcXAOxOBn.o dist/default/production/Teclado.X.production.o 
+  /tmp/xcX7NtvK6.o dist/default/production/Teclado.X.production.o 
 
 Object code version is 3.11
 
@@ -35,42 +35,72 @@ Call graph: (short form)
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-/tmp/xcXAOxOBn.o
+/tmp/xcX7NtvK6.o
                 init                                  0        0        4        0       0
                 idloc                            200000   200000        8   200000       0
                 config                           300000   300000        E   300000       0
 dist/default/production/Teclado.X.production.o
                 smallconst                          800      800       5A      400       0
-                text9                               ABA      ABA       12      42D       0
-                text8                               A24      A24       30      42D       0
-                text7                               9EA      9EA       3A      42D       0
-                text6                               AEC      AEC        8      42D       0
-                text5                               A7E      A7E       2A      42D       0
-                text4                               A54      A54       2A      42D       0
-                text3                               AA8      AA8       12      42D       0
-                text2                               85A      85A      190      42D       0
-                text1                               AE2      AE2        A      42D       0
-                text0                               AD8      AD8        A      42D       0
+                text24                              B14      B14       12      42D       0
+                text23                              970      970       30      42D       0
+                text22                              936      936       3A      42D       0
+                text21                              B46      B46        8      42D       0
+                text20                              9CA      9CA       2A      42D       0
+                text19                              9A0      9A0       2A      42D       0
+                text18                              B02      B02       12      42D       0
+                text17                              AF0      AF0       12      42D       0
+                text16                              ADE      ADE       12      42D       0
+                text15                              ACC      ACC       12      42D       0
+                text14                              ABA      ABA       12      42D       0
+                text13                              AA8      AA8       12      42D       0
+                text12                              A96      A96       12      42D       0
+                text11                              A84      A84       12      42D       0
+                text10                              A72      A72       12      42D       0
+                text9                               A60      A60       12      42D       0
+                text8                               A4E      A4E       12      42D       0
+                text7                               A3C      A3C       12      42D       0
+                text6                               A2A      A2A       12      42D       0
+                text5                               A18      A18       12      42D       0
+                text4                               A06      A06       12      42D       0
+                text3                               9F4      9F4       12      42D       0
+                text2                               85A      85A       DC      42D       0
+                text1                               B3C      B3C        A      42D       0
+                text0                               B32      B32        A      42D       0
                 cstackCOMRAM                          1        1        4        1       1
                 bssCOMRAM                             5        5        1        1       1
-                cinit                               ACC      ACC        C      42D       0
+                cinit                               B26      B26        C      42D       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
 
         CLASS   CODE           
                 init                                  0        0        4         0
-                text9                               ABA      ABA       12         0
-                text8                               A24      A24       30         0
-                text7                               9EA      9EA       3A         0
-                text6                               AEC      AEC        8         0
-                text5                               A7E      A7E       2A         0
-                text4                               A54      A54       2A         0
-                text3                               AA8      AA8       12         0
-                text2                               85A      85A      190         0
-                text1                               AE2      AE2        A         0
-                text0                               AD8      AD8        A         0
-                cinit                               ACC      ACC        C         0
+                text24                              B14      B14       12         0
+                text23                              970      970       30         0
+                text22                              936      936       3A         0
+                text21                              B46      B46        8         0
+                text20                              9CA      9CA       2A         0
+                text19                              9A0      9A0       2A         0
+                text18                              B02      B02       12         0
+                text17                              AF0      AF0       12         0
+                text16                              ADE      ADE       12         0
+                text15                              ACC      ACC       12         0
+                text14                              ABA      ABA       12         0
+                text13                              AA8      AA8       12         0
+                text12                              A96      A96       12         0
+                text11                              A84      A84       12         0
+                text10                              A72      A72       12         0
+                text9                               A60      A60       12         0
+                text8                               A4E      A4E       12         0
+                text7                               A3C      A3C       12         0
+                text6                               A2A      A2A       12         0
+                text5                               A18      A18       12         0
+                text4                               A06      A06       12         0
+                text3                               9F4      9F4       12         0
+                text2                               85A      85A       DC         0
+                text1                               B3C      B3C        A         0
+                text0                               B32      B32        A         0
+                cinit                               B26      B26        C         0
 
         CLASS   CONST          
 
@@ -124,7 +154,7 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 reset_vec                      000000  000004  000004         0       0  CODE    
                 cstackCOMRAM                   000001  000005  000006         1       1  COMRAM  
                 smallconst                     000800  00005A  00085A       400       0  SMALLCON
-                text2                          00085A  00029A  000AF4       42D       0  CODE    
+                text2                          00085A  0002F4  000B4E       42D       0  CODE    
                 idloc                          200000  000008  200008    200000       0  IDLOC   
                 config                         300000  00000E  30000E    300000       0  CONFIG  
 
@@ -142,15 +172,15 @@ UNUSED ADDRESS RANGES
         BANK7            000700-0007FF              100
         BIGRAM           000006-0007FF              7FA
         CODE             000004-0007FF              7FC
-                         000AF4-007FFF             750C
+                         000B4E-007FFF             74B2
         COMRAM           000006-00005F               5A
         CONST            000004-0007FF              7FC
-                         000AF4-007FFF             750C
+                         000B4E-007FFF             74B2
         EEDATA           F00000-F000FF              100
-        MEDIUMCONST      000AF4-007FFF             750C
+        MEDIUMCONST      000B4E-007FFF             74B2
         RAM              000060-0007FF              100
         SFR              000F53-000FFF                D
-        SMALLCONST       000AF4-007FFF              100
+        SMALLCONST       000B4E-007FFF              100
         STACK            000060-0007FF              7A0
 
                                   Symbol Table
@@ -267,7 +297,22 @@ __Htemp                     temp         000000
 __Htext                     text         000000
 __Htext0                    text0        000000
 __Htext1                    text1        000000
+__Htext10                   text10       000000
+__Htext11                   text11       000000
+__Htext12                   text12       000000
+__Htext13                   text13       000000
+__Htext14                   text14       000000
+__Htext15                   text15       000000
+__Htext16                   text16       000000
+__Htext17                   text17       000000
+__Htext18                   text18       000000
+__Htext19                   text19       000000
 __Htext2                    text2        000000
+__Htext20                   text20       000000
+__Htext21                   text21       000000
+__Htext22                   text22       000000
+__Htext23                   text23       000000
+__Htext24                   text24       000000
 __Htext3                    text3        000000
 __Htext4                    text4        000000
 __Htext5                    text5        000000
@@ -336,7 +381,22 @@ __Ltemp                     temp         000000
 __Ltext                     text         000000
 __Ltext0                    text0        000000
 __Ltext1                    text1        000000
+__Ltext10                   text10       000000
+__Ltext11                   text11       000000
+__Ltext12                   text12       000000
+__Ltext13                   text13       000000
+__Ltext14                   text14       000000
+__Ltext15                   text15       000000
+__Ltext16                   text16       000000
+__Ltext17                   text17       000000
+__Ltext18                   text18       000000
+__Ltext19                   text19       000000
 __Ltext2                    text2        000000
+__Ltext20                   text20       000000
+__Ltext21                   text21       000000
+__Ltext22                   text22       000000
+__Ltext23                   text23       000000
+__Ltext24                   text24       000000
 __Ltext3                    text3        000000
 __Ltext4                    text4        000000
 __Ltext5                    text5        000000
@@ -354,33 +414,63 @@ ___rparam_used              (abs)        000001
 ___sp                       stack        000000
 __accesstop                 (abs)        000060
 __activetblptr              (abs)        000002
-__end_of_Inkey              text2        0009EA
-__end_of__initialization    cinit        000ACE
-__end_of_inicio_teclado     text1        000AEC
-__end_of_lcd_clear_display  text6        000AF4
-__end_of_lcd_control        text8        000A54
-__end_of_lcd_dato           text5        000AA8
-__end_of_lcd_init           text7        000A24
-__end_of_lcd_print          text4        000A7E
-__end_of_lcd_time_control   text9        000ACC
-__end_of_main               text0        000AE2
-__end_of_tecla_1            text3        000ABA
-__initialization            cinit        000ACC
+__end_of_Inkey              text2        000936
+__end_of__initialization    cinit        000B28
+__end_of_inicio_teclado     text1        000B46
+__end_of_lcd_clear_display  text21       000B4E
+__end_of_lcd_control        text23       0009A0
+__end_of_lcd_dato           text20       0009F4
+__end_of_lcd_init           text22       000970
+__end_of_lcd_print          text19       0009CA
+__end_of_lcd_time_control   text24       000B26
+__end_of_main               text0        000B3C
+__end_of_tecla_0            text18       000B14
+__end_of_tecla_1            text17       000B02
+__end_of_tecla_2            text16       000AF0
+__end_of_tecla_3            text15       000ADE
+__end_of_tecla_4            text14       000ACC
+__end_of_tecla_5            text13       000ABA
+__end_of_tecla_6            text12       000AA8
+__end_of_tecla_7            text11       000A96
+__end_of_tecla_8            text10       000A84
+__end_of_tecla_9            text9        000A72
+__end_of_tecla_A            text8        000A60
+__end_of_tecla_B            text7        000A4E
+__end_of_tecla_C            text6        000A3C
+__end_of_tecla_D            text5        000A2A
+__end_of_tecla_aste         text4        000A18
+__end_of_tecla_gato         text3        000A06
+__initialization            cinit        000B26
 __mediumconst               mediumconst  000000
 __pbssCOMRAM                bssCOMRAM    000005
-__pcinit                    cinit        000ACC
+__pcinit                    cinit        000B26
 __pcstackCOMRAM             cstackCOMRAM 000001
 __psmallconst               smallconst   000800
-__ptext0                    text0        000AD8
-__ptext1                    text1        000AE2
+__ptext0                    text0        000B32
+__ptext1                    text1        000B3C
+__ptext10                   text10       000A72
+__ptext11                   text11       000A84
+__ptext12                   text12       000A96
+__ptext13                   text13       000AA8
+__ptext14                   text14       000ABA
+__ptext15                   text15       000ACC
+__ptext16                   text16       000ADE
+__ptext17                   text17       000AF0
+__ptext18                   text18       000B02
+__ptext19                   text19       0009A0
 __ptext2                    text2        00085A
-__ptext3                    text3        000AA8
-__ptext4                    text4        000A54
-__ptext5                    text5        000A7E
-__ptext6                    text6        000AEC
-__ptext7                    text7        0009EA
-__ptext8                    text8        000A24
-__ptext9                    text9        000ABA
+__ptext20                   text20       0009CA
+__ptext21                   text21       000B46
+__ptext22                   text22       000936
+__ptext23                   text23       000970
+__ptext24                   text24       000B14
+__ptext3                    text3        0009F4
+__ptext4                    text4        000A06
+__ptext5                    text5        000A18
+__ptext6                    text6        000A2A
+__ptext7                    text7        000A3C
+__ptext8                    text8        000A4E
+__ptext9                    text9        000A60
 __ramtop                    ramtop       000800
 __size_of_Inkey             (abs)        000000
 __size_of_inicio_teclado    (abs)        000000
@@ -391,19 +481,49 @@ __size_of_lcd_init          (abs)        000000
 __size_of_lcd_print         (abs)        000000
 __size_of_lcd_time_control  (abs)        000000
 __size_of_main              (abs)        000000
+__size_of_tecla_0           (abs)        000000
 __size_of_tecla_1           (abs)        000000
+__size_of_tecla_2           (abs)        000000
+__size_of_tecla_3           (abs)        000000
+__size_of_tecla_4           (abs)        000000
+__size_of_tecla_5           (abs)        000000
+__size_of_tecla_6           (abs)        000000
+__size_of_tecla_7           (abs)        000000
+__size_of_tecla_8           (abs)        000000
+__size_of_tecla_9           (abs)        000000
+__size_of_tecla_A           (abs)        000000
+__size_of_tecla_B           (abs)        000000
+__size_of_tecla_C           (abs)        000000
+__size_of_tecla_D           (abs)        000000
+__size_of_tecla_aste        (abs)        000000
+__size_of_tecla_gato        (abs)        000000
 __smallconst                smallconst   000800
-_inicio_teclado             text1        000AE2
-_lcd_clear_display          text6        000AEC
-_lcd_control                text8        000A24
-_lcd_dato                   text5        000A7E
-_lcd_init                   text7        0009EA
-_lcd_print                  text4        000A54
-_lcd_time_control           text9        000ABA
-_main                       text0        000AD8
-_tecla_1                    text3        000AA8
+_inicio_teclado             text1        000B3C
+_lcd_clear_display          text21       000B46
+_lcd_control                text23       000970
+_lcd_dato                   text20       0009CA
+_lcd_init                   text22       000936
+_lcd_print                  text19       0009A0
+_lcd_time_control           text24       000B14
+_main                       text0        000B32
+_tecla_0                    text18       000B02
+_tecla_1                    text17       000AF0
+_tecla_2                    text16       000ADE
+_tecla_3                    text15       000ACC
+_tecla_4                    text14       000ABA
+_tecla_5                    text13       000AA8
+_tecla_6                    text12       000A96
+_tecla_7                    text11       000A84
+_tecla_8                    text10       000A72
+_tecla_9                    text9        000A60
+_tecla_A                    text8        000A4E
+_tecla_B                    text7        000A3C
+_tecla_C                    text6        000A2A
+_tecla_D                    text5        000A18
+_tecla_aste                 text4        000A06
+_tecla_gato                 text3        0009F4
 _val                        bssCOMRAM    000005
-end_of_initialization       cinit        000ACE
+end_of_initialization       cinit        000B28
 intlevel0                   text         000000
 intlevel1                   text         000000
 intlevel2                   text         000000
@@ -414,7 +534,7 @@ lcd_print@dato              cstackCOMRAM 000003
 stackhi                     (abs)        0007FF
 stacklo                     (abs)        000060
 start                       init         000000
-start_initialization        cinit        000ACC
+start_initialization        cinit        000B26
 
 
 FUNCTION INFORMATION:
@@ -451,7 +571,7 @@ Total ram usage:        0 bytes
 
  *************** function _inicio_teclado *****************
  Defined at:
-		line 173 in file "./teclado.h"
+		line 62 in file "./teclado.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -480,7 +600,7 @@ Total ram usage:        0 bytes
 
  *************** function _Inkey *****************
  Defined at:
-		line 22 in file "./teclado.h"
+		line 24 in file "./teclado.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -502,18 +622,496 @@ Total ram usage:        0 bytes
  Hardware stack levels used:    1
  Hardware stack levels required when called:    4
  This function calls:
-		_lcd_clear_display
 		_lcd_init
-		_lcd_print
+		_tecla_0
 		_tecla_1
+		_tecla_2
+		_tecla_3
+		_tecla_4
+		_tecla_5
+		_tecla_6
+		_tecla_7
+		_tecla_8
+		_tecla_9
+		_tecla_A
+		_tecla_B
+		_tecla_C
+		_tecla_D
+		_tecla_aste
+		_tecla_gato
  This function is called by:
 		_main
  This function uses a non-reentrant model
 
 
+ *************** function _tecla_gato *****************
+ Defined at:
+		line 170 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_aste *****************
+ Defined at:
+		line 160 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_D *****************
+ Defined at:
+		line 175 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_C *****************
+ Defined at:
+		line 155 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_B *****************
+ Defined at:
+		line 135 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_A *****************
+ Defined at:
+		line 117 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_9 *****************
+ Defined at:
+		line 150 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_8 *****************
+ Defined at:
+		line 145 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_7 *****************
+ Defined at:
+		line 140 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_6 *****************
+ Defined at:
+		line 130 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_5 *****************
+ Defined at:
+		line 125 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_4 *****************
+ Defined at:
+		line 121 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_3 *****************
+ Defined at:
+		line 112 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_2 *****************
+ Defined at:
+		line 108 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
  *************** function _tecla_1 *****************
  Defined at:
-		line 214 in file "./teclado.h"
+		line 103 in file "./teclado.h"
+ Parameters:    Size  Location     Type
+		None
+ Auto vars:     Size  Location     Type
+		None
+ Return value:  Size  Location     Type
+                  1    wreg      void 
+ Registers used:
+		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+ Tracked objects:
+		On entry : 
+		On exit  : 
+		Unchanged: 
+ Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+      Params:         0       0       0       0       0       0       0       0       0
+      Locals:         0       0       0       0       0       0       0       0       0
+      Temps:          0       0       0       0       0       0       0       0       0
+      Totals:         0       0       0       0       0       0       0       0       0
+Total ram usage:        0 bytes
+ Hardware stack levels used:    1
+ Hardware stack levels required when called:    3
+ This function calls:
+		_lcd_clear_display
+		_lcd_print
+ This function is called by:
+		_Inkey
+ This function uses a non-reentrant model
+
+
+ *************** function _tecla_0 *****************
+ Defined at:
+		line 165 in file "./teclado.h"
  Parameters:    Size  Location     Type
 		None
  Auto vars:     Size  Location     Type
@@ -547,11 +1145,11 @@ Total ram usage:        0 bytes
 		line 90 in file "./LCD.h"
  Parameters:    Size  Location     Type
   dato            2    2[COMRAM] PTR unsigned char 
-		 -> STR_20(2), STR_19(15), STR_18(15), STR_17(13), 
-		 -> STR_16(13), STR_15(2), STR_14(2), STR_13(2), 
+		 -> STR_20(2), STR_19(2), STR_18(2), STR_17(2), 
+		 -> STR_16(2), STR_15(2), STR_14(2), STR_13(2), 
 		 -> STR_12(2), STR_11(2), STR_10(2), STR_9(2), 
 		 -> STR_8(2), STR_7(2), STR_6(2), STR_5(2), 
-		 -> STR_4(2), STR_3(2), STR_2(2), STR_1(2), 
+		 -> STR_4(15), STR_3(15), STR_2(13), STR_1(13), 
  Auto vars:     Size  Location     Type
 		None
  Return value:  Size  Location     Type
@@ -573,8 +1171,22 @@ Total ram usage:        2 bytes
  This function calls:
 		_lcd_dato
  This function is called by:
-		_Inkey
 		_tecla_1
+		_tecla_2
+		_tecla_3
+		_tecla_A
+		_tecla_4
+		_tecla_5
+		_tecla_6
+		_tecla_B
+		_tecla_7
+		_tecla_8
+		_tecla_9
+		_tecla_C
+		_tecla_aste
+		_tecla_0
+		_tecla_gato
+		_tecla_D
 		_lcd_print_with_position
 		_registro_teclado
  This function uses a non-reentrant model
@@ -638,8 +1250,22 @@ Total ram usage:        0 bytes
  This function calls:
 		_lcd_control
  This function is called by:
-		_Inkey
 		_tecla_1
+		_tecla_2
+		_tecla_3
+		_tecla_A
+		_tecla_4
+		_tecla_5
+		_tecla_6
+		_tecla_B
+		_tecla_7
+		_tecla_8
+		_tecla_9
+		_tecla_C
+		_tecla_aste
+		_tecla_0
+		_tecla_gato
+		_tecla_D
 		_registro_teclado
  This function uses a non-reentrant model
 
@@ -746,29 +1372,44 @@ MODULE INFORMATION
 
 Module		Function		Class		Link	Load	Size
 ./teclado.h
-		_tecla_1       		CODE           	0AA8	0000	19
-		_Inkey         		CODE           	085A	0000	401
-		_inicio_teclado		CODE           	0AE2	0000	11
+		_tecla_1       		CODE           	0AF0	0000	19
+		_tecla_A       		CODE           	0A4E	0000	19
+		_tecla_aste    		CODE           	0A06	0000	19
+		_tecla_4       		CODE           	0ABA	0000	19
+		_tecla_D       		CODE           	0A18	0000	19
+		_tecla_7       		CODE           	0A84	0000	19
+		_tecla_gato    		CODE           	09F4	0000	19
+		_Inkey         		CODE           	085A	0000	221
+		_tecla_0       		CODE           	0B02	0000	19
+		_inicio_teclado		CODE           	0B3C	0000	11
+		_tecla_3       		CODE           	0ACC	0000	19
+		_tecla_C       		CODE           	0A2A	0000	19
+		_tecla_6       		CODE           	0A96	0000	19
+		_tecla_9       		CODE           	0A60	0000	19
+		_tecla_2       		CODE           	0ADE	0000	19
+		_tecla_B       		CODE           	0A3C	0000	19
+		_tecla_5       		CODE           	0AA8	0000	19
+		_tecla_8       		CODE           	0A72	0000	19
 
-./teclado.h estimated size: 431
+./teclado.h estimated size: 536
 
 ./LCD.h
-		_lcd_time_control		CODE           	0ABA	0000	19
-		_lcd_dato      		CODE           	0A7E	0000	43
-		_lcd_print     		CODE           	0A54	0000	43
-		_lcd_control   		CODE           	0A24	0000	49
-		_lcd_clear_display		CODE           	0AEC	0000	9
-		_lcd_init      		CODE           	09EA	0000	59
+		_lcd_time_control		CODE           	0B14	0000	19
+		_lcd_dato      		CODE           	09CA	0000	43
+		_lcd_print     		CODE           	09A0	0000	43
+		_lcd_control   		CODE           	0970	0000	49
+		_lcd_clear_display		CODE           	0B46	0000	9
+		_lcd_init      		CODE           	0936	0000	59
 
 ./LCD.h estimated size: 222
 
 Main.c
-		_main          		CODE           	0AD8	0000	11
+		_main          		CODE           	0B32	0000	11
 
 Main.c estimated size: 11
 
 shared
-		__initialization		CODE           	0ACC	0000	3
+		__initialization		CODE           	0B26	0000	3
 
 shared estimated size: 3
 
